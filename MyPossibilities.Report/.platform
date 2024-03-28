@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "MyPossibilities"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "498e4b32-4de9-4b20-94ca-be66aca19fa3"
+  }
+}
