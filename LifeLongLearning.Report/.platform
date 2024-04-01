@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "SemanticModel",
-    "displayName": "MyPossibilities"
+    "type": "Report",
+    "displayName": "LifeLongLearning"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "8c16c2f6-0778-407a-8b95-eb2108f44e65"
+    "logicalId": "541af0d8-a3df-4923-9063-774f9dab245c"
   }
 }

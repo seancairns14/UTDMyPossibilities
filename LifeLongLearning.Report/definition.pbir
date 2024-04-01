@@ -2,7 +2,7 @@
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../MyPossibilities.SemanticModel"
+      "path": "../LifeLongLearning.SemanticModel"
     },
     "byConnection": null
   }
