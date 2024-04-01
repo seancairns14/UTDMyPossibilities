@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "pods": [
     {
@@ -29,81 +29,24 @@
   ],
   "sections": [
     {
-      "config": "{}",
-      "displayName": "Caregiver",
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F0F3F7'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "LifeLongLearning",
       "displayOption": 1,
       "filters": "[]",
-      "height": 720.00,
+      "height": 1200.00,
       "name": "ReportSection",
       "visualContainers": [
         {
-          "config": "{\"name\":\"3dcf410e3ed953b99003\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":491.1854103343465,\"height\":122.55319148936171,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
-          "filters": "[]",
-          "height": 122.55,
-          "width": 491.19,
-          "x": 9.73,
-          "y": 0.00,
+          "config": "{\"name\":\"01fe1d6a56e1705514da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":95.1219512195122,\"y\":80.48780487804878,\"z\":0,\"width\":365.8536585365854,\"height\":307.3170731707317,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Hipster.Gender:\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Hipster.Gender:)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Hipster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"},\"Name\":\"Hipster.Gender:\",\"NativeReferenceName\":\"Gender:\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"}},\"Function\":5},\"Name\":\"CountNonNull(Hipster.Gender:)\",\"NativeReferenceName\":\"Count of Gender:\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"Filterf34e312b4cc6d2b4171c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Hipster\"}},\"Property\":\"Gender:\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Hipster\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'None'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 307.32,
+          "width": 365.85,
+          "x": 95.12,
+          "y": 80.49,
           "z": 0.00
-        },
-        {
-          "config": "{\"name\":\"8019b0c505073525afd5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":67.36842105263158,\"y\":359.69924812030075,\"z\":2000,\"width\":490.8270676691729,\"height\":150.37593984962405,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table1.Percent Female\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Caregiver\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Percent Female\"},\"Name\":\"Table1.Percent Female\",\"NativeReferenceName\":\"Percent Female\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Percent Female\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 150.38,
-          "width": 490.83,
-          "x": 67.37,
-          "y": 359.70,
-          "z": 2000.00
-        },
-        {
-          "config": "{\"name\":\"a60bde27235c2c858312\",\"layouts\":[{\"id\":0,\"position\":{\"x\":67.36842105263158,\"y\":209.32330827067668,\"z\":1000,\"width\":490.8270676691729,\"height\":150.37593984962405,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table1.PercentMale\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Caregiver\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Percent Male\"},\"Name\":\"Table1.PercentMale\",\"NativeReferenceName\":\"Percent Male\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Percent Male\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 150.38,
-          "width": 490.83,
-          "x": 67.37,
-          "y": 209.32,
-          "z": 1000.00
         }
       ],
-      "width": 1280.00
-    },
-    {
-      "config": "{}",
-      "displayName": "Hipster",
-      "displayOption": 1,
-      "filters": "[]",
-      "height": 720.00,
-      "name": "ReportSection7d504657159f7189c524",
-      "ordinal": 1,
-      "visualContainers": [
-        {
-          "config": "{\"name\":\"286b723b46ccae3f2d4a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":109.90881458966565,\"y\":69.05775075987842,\"z\":0,\"width\":227.5987841945289,\"height\":199.3920972644377,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"advanceCardE03760C5AB684758B56AA29F9E6C257B\",\"projections\":{\"mainMeasure\":[{\"queryRef\":\"Hipster.My Instructors Care About Me\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Hipster\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"My Instructors Care About Me\"},\"Name\":\"Hipster.My Instructors Care About Me\",\"NativeReferenceName\":\"My Instructors Care About Me\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"My Instructors Care About Me\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"conditionSettings\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
-          "filters": "[]",
-          "height": 199.39,
-          "width": 227.60,
-          "x": 109.91,
-          "y": 69.06,
-          "z": 0.00
-        },
-        {
-          "config": "{\"name\":\"4cc4107f731f725ccd75\",\"layouts\":[{\"id\":0,\"position\":{\"x\":484.36838069990773,\"y\":316.17012981950023,\"z\":1000,\"width\":743.0530323704079,\"height\":394.9465258014632,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Hipster.How many days per week do you attend MP?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Hipster.How many days per week do you attend MP?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Hipster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"How many days per week do you attend MP?\"},\"Name\":\"Hipster.How many days per week do you attend MP?\",\"NativeReferenceName\":\"How many days per week do you attend MP?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"How many days per week do you attend MP?\"}},\"Function\":5},\"Name\":\"CountNonNull(Hipster.How many days per week do you attend MP?)\",\"NativeReferenceName\":\"Count of How many days per week do you attend MP?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"How many days per week do you attend MP?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 394.95,
-          "width": 743.05,
-          "x": 484.37,
-          "y": 316.17,
-          "z": 1000.00
-        },
-        {
-          "config": "{\"name\":\"ca0e43340f7da2f49a69\",\"layouts\":[{\"id\":0,\"position\":{\"x\":378.978337426741,\"y\":54.29184047405559,\"z\":2000,\"width\":227.81282081270385,\"height\":199.07008173820384,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Hipster.I Keep Trying When Things are Hard\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Hipster\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"I Keep Trying When Things are Hard\"},\"Name\":\"Hipster.I Keep Trying When Things are Hard\",\"NativeReferenceName\":\"I Keep Trying When Things are Hard\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"I Keep Trying When Things are Hard\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 199.07,
-          "width": 227.81,
-          "x": 378.98,
-          "y": 54.29,
-          "z": 2000.00
-        }
-      ],
-      "width": 1280.00
+      "width": 1000.00
     }
   ]
 }
