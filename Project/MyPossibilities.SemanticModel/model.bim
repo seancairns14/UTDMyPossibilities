@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Caregiver\",\"Hipster\",\"Clinical HIPster\"]"
+        "value": "[\"LLL_Caregiver\",\"LLL_Hipster\",\"Clinical_HIPster\",\"Clinical_Caregiver\",\"Online_HIPster\",\"Online_Caregiver\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -41,7 +41,7 @@
       {
         "name": "07f15583-cd48-44e6-aaa6-a8f2a1134997",
         "fromColumn": "Start time",
-        "fromTable": "Caregiver",
+        "fromTable": "LLL_Caregiver",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_89bb71aa-d8fd-444c-b424-56ee23caad24"
@@ -49,7 +49,7 @@
       {
         "name": "dae6dec9-c97a-4eab-9570-ea53a75e8328",
         "fromColumn": "Completion time",
-        "fromTable": "Caregiver",
+        "fromTable": "LLL_Caregiver",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_4e0f6fe1-449f-4e94-94b7-0e003a701f52"
@@ -57,7 +57,7 @@
       {
         "name": "46a18768-5a4f-4d5c-9642-3ff2b18975b0",
         "fromColumn": "Start time",
-        "fromTable": "Hipster",
+        "fromTable": "LLL_Hipster",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_3bfb7506-9417-4a0e-bf6b-edfde9eb4faa"
@@ -65,7 +65,7 @@
       {
         "name": "3782df34-d4f1-4c4a-9280-4e6e56f03d87",
         "fromColumn": "Completion time",
-        "fromTable": "Hipster",
+        "fromTable": "LLL_Hipster",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_3ea6bae3-8ba8-4c54-81e3-e98c5a1a5ef1"
@@ -73,7 +73,7 @@
       {
         "name": "a1549f3a-8abc-4699-8045-2f19dc6092f8",
         "fromColumn": "Start time",
-        "fromTable": "Clinical HIPster",
+        "fromTable": "Clinical_HIPster",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_3282fa76-e528-483f-9b93-1356ee97f0ad"
@@ -81,16 +81,64 @@
       {
         "name": "538e021a-4089-4583-9a9e-a375e25e470c",
         "fromColumn": "Completion time",
-        "fromTable": "Clinical HIPster",
+        "fromTable": "Clinical_HIPster",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_7feae086-e6ce-4a2b-8b1c-c34c7fadbfc2"
+      },
+      {
+        "name": "34e19c9c-4337-41c3-8150-1fa29cfa6f46",
+        "fromColumn": "Start time",
+        "fromTable": "Clinical_Caregiver",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_dcc7bf46-04a3-412a-b48e-f69c9cfea24f"
+      },
+      {
+        "name": "d71a2cde-e1d8-4363-946d-9fa80c734d39",
+        "fromColumn": "Completion time",
+        "fromTable": "Clinical_Caregiver",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_d712fb1c-5106-4959-a9d1-0f997023ecb3"
+      },
+      {
+        "name": "f77bc429-3588-4857-898b-05306d0752a0",
+        "fromColumn": "Start time",
+        "fromTable": "Online_HIPster",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_c92dc086-a702-454e-b217-3a3160992764"
+      },
+      {
+        "name": "d099ced7-be29-4c05-aefd-a7b70f32d496",
+        "fromColumn": "Completion time",
+        "fromTable": "Online_HIPster",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_df8ef5e0-b131-4083-a0ee-dfb61032f35a"
+      },
+      {
+        "name": "5bdb470e-8533-40c8-a66b-7e5b600e61fa",
+        "fromColumn": "Start time",
+        "fromTable": "Online_Caregiver",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_b2f1d195-f7a2-421a-9d16-a623b2464d99"
+      },
+      {
+        "name": "06916f65-7f4f-4d41-bea9-becf967cffb3",
+        "fromColumn": "Completion time",
+        "fromTable": "Online_Caregiver",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_13840275-1257-40ab-816e-2408dc15b9d2"
       }
     ],
     "sourceQueryCulture": "en-US",
     "tables": [
       {
-        "name": "Caregiver",
+        "name": "LLL_Caregiver",
         "annotations": [
           {
             "name": "PBI_ResultType",
@@ -104,6 +152,9 @@
         "changedProperties": [
           {
             "property": "IsHidden"
+          },
+          {
+            "property": "Name"
           }
         ],
         "columns": [
@@ -728,8 +779,8 @@
             "expression": [
               "",
               "MAXX(",
-              "\tKEEPFILTERS(VALUES('Caregiver'[MP communicates effectively regarding schedules, events, and activities.])),",
-              "\tCALCULATE(MIN('Caregiver'[MP communicates effectively regarding schedules, events, and activities.]))",
+              "\tKEEPFILTERS(VALUES('LLL_Caregiver'[MP communicates effectively regarding schedules, events, and activities.])),",
+              "\tCALCULATE(MIN('LLL_Caregiver'[MP communicates effectively regarding schedules, events, and activities.]))",
               ")"
             ],
             "extendedProperties": [
@@ -760,7 +811,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Caregiver), Caregiver[My HIPster's Gender:] = \"Male\") / COUNTROWS(Caregiver))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Caregiver), LLL_Caregiver[My HIPster's Gender:] = \"Male\") / COUNTROWS(LLL_Caregiver))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "ff8c0c31-10b5-4610-9e4b-0ee6d4dd2290"
           },
@@ -771,7 +822,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Caregiver), Caregiver[My HIPster's Gender:] = \"Female\") / COUNTROWS(Caregiver))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Caregiver), LLL_Caregiver[My HIPster's Gender:] = \"Female\") / COUNTROWS(LLL_Caregiver))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "19d8bdac-2757-42e4-9063-8a36c5af00ba"
           },
@@ -783,13 +834,13 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Caregiver[MP programs meet the needs of my HIPster.] <> \"No\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Caregiver[MP programs meet the needs of my HIPster.] <> \"No\") / COUNTROWS(LLL_Hipster))",
             "lineageTag": "7f9fb895-24c9-401b-a9d1-4603a23537b6"
           }
         ],
         "partitions": [
           {
-            "name": "Caregiver",
+            "name": "LLL_Caregiver",
             "mode": "import",
             "source": {
               "expression": [
@@ -1206,7 +1257,7 @@
             "name": "LocalDateTable_89bb71aa-d8fd-444c-b424-56ee23caad24",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Caregiver'[Start time])), 1, 1), Date(Year(MAX('Caregiver'[Start time])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('LLL_Caregiver'[Start time])), 1, 1), Date(Year(MAX('LLL_Caregiver'[Start time])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -1406,7 +1457,7 @@
             "name": "LocalDateTable_4e0f6fe1-449f-4e94-94b7-0e003a701f52",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Caregiver'[Completion time])), 1, 1), Date(Year(MAX('Caregiver'[Completion time])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('LLL_Caregiver'[Completion time])), 1, 1), Date(Year(MAX('LLL_Caregiver'[Completion time])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -1414,11 +1465,16 @@
         "showAsVariationsOnly": true
       },
       {
-        "name": "Hipster",
+        "name": "LLL_Hipster",
         "annotations": [
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "Name"
           }
         ],
         "columns": [
@@ -1817,7 +1873,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Hipster[Have you learned something new at MP?] = \"Yes\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Have you learned something new at MP?] = \"Yes\") / COUNTROWS(LLL_Hipster))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "0d2cde56-e890-489b-875d-60440c97361b"
           },
@@ -1828,7 +1884,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Hipster[Do you share what you know?] = \"Yes\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Do you share what you know?] = \"Yes\") / COUNTROWS(LLL_Hipster))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "08f7c016-004d-4967-bb70-d9b1bf389f39"
           },
@@ -1839,7 +1895,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Hipster[Do you learn to make good choices at MP?] <> \"No\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Do you learn to make good choices at MP?] <> \"No\") / COUNTROWS(LLL_Hipster))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "5ed0a3ae-5505-4f7a-8dbf-fe894aa7a7eb"
           },
@@ -1850,7 +1906,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Hipster[Do you like being a HIPster at MP?] <> \"No\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Do you like being a HIPster at MP?] <> \"No\") / COUNTROWS(LLL_Hipster))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "90765e55-ba94-4df2-8a86-5197564745b0"
           },
@@ -1861,7 +1917,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Hipster[Do your instructors show care for you?] <> \"No\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Do your instructors show care for you?] <> \"No\") / COUNTROWS(LLL_Hipster))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "42ddcee2-4158-4d5f-b1f1-7fd87f0a3570"
           },
@@ -1872,7 +1928,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Hipster[Have you made friends with other HIPsters?] <> \"No\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Have you made friends with other HIPsters?] <> \"No\") / COUNTROWS(LLL_Hipster))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "a7b6c194-47ae-4489-b089-1cd7fb33795c"
           },
@@ -1883,7 +1939,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Hipster[Are you excited about your future?] <> \"No\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Are you excited about your future?] <> \"No\") / COUNTROWS(LLL_Hipster))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "52a1d6c3-e074-4835-8586-304f68b59017"
           },
@@ -1894,7 +1950,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Hipster[Do you pick your own classes?] <> \"No\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Do you pick your own classes?] <> \"No\") / COUNTROWS(LLL_Hipster))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "627d8e25-e76b-49e5-8ae8-221bcee7d4dd"
           },
@@ -1905,7 +1961,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Hipster[Do you keep trying even when things are hard to do?] <> \"No\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Do you keep trying even when things are hard to do?] <> \"No\") / COUNTROWS(LLL_Hipster))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "aacec70d-a045-4dc0-81f6-61e69d1ca37f"
           },
@@ -1916,7 +1972,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Hipster), Hipster[Do you learn to make good choices at MP?] <> \"No\") / COUNTROWS(Hipster))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Do you learn to make good choices at MP?] <> \"No\") / COUNTROWS(LLL_Hipster))",
             "formatString": "0%;-0%;0%",
             "lineageTag": "fcdbabfc-7756-48fc-a335-8fed3501db08"
           },
@@ -1928,7 +1984,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Caregiver), Caregiver[My HIPster's Gender:] = \"Female\") / COUNTROWS(Caregiver))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Caregiver), LLL_Caregiver[My HIPster's Gender:] = \"Female\") / COUNTROWS(LLL_Caregiver))",
             "lineageTag": "146e55ee-17c9-4e93-ae0b-36d5f9b3ac4b"
           },
           {
@@ -1939,13 +1995,13 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "(CALCULATE(COUNTROWS(Caregiver), Caregiver[My HIPster's Gender:] = \"Male\") / COUNTROWS(Caregiver))",
+            "expression": "(CALCULATE(COUNTROWS(LLL_Caregiver), LLL_Caregiver[My HIPster's Gender:] = \"Male\") / COUNTROWS(LLL_Caregiver))",
             "lineageTag": "c3b9d122-fe53-4504-bfd3-c5bed7057a82"
           }
         ],
         "partitions": [
           {
-            "name": "Hipster",
+            "name": "LLL_Hipster",
             "mode": "import",
             "source": {
               "expression": [
@@ -2156,7 +2212,7 @@
             "name": "LocalDateTable_3bfb7506-9417-4a0e-bf6b-edfde9eb4faa",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Hipster'[Start time])), 1, 1), Date(Year(MAX('Hipster'[Start time])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('LLL_Hipster'[Start time])), 1, 1), Date(Year(MAX('LLL_Hipster'[Start time])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -2356,7 +2412,7 @@
             "name": "LocalDateTable_3ea6bae3-8ba8-4c54-81e3-e98c5a1a5ef1",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Hipster'[Completion time])), 1, 1), Date(Year(MAX('Hipster'[Completion time])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('LLL_Hipster'[Completion time])), 1, 1), Date(Year(MAX('LLL_Hipster'[Completion time])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -2364,7 +2420,7 @@
         "showAsVariationsOnly": true
       },
       {
-        "name": "Clinical HIPster",
+        "name": "Clinical_HIPster",
         "annotations": [
           {
             "name": "PBI_ResultType",
@@ -2653,7 +2709,7 @@
         "lineageTag": "26e70a20-158d-4099-9229-a13d910c548f",
         "partitions": [
           {
-            "name": "Clinical HIPster",
+            "name": "Clinical_HIPster",
             "mode": "import",
             "source": {
               "expression": [
@@ -2863,7 +2919,7 @@
             "name": "LocalDateTable_3282fa76-e528-483f-9b93-1356ee97f0ad",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Clinical HIPster'[Start time])), 1, 1), Date(Year(MAX('Clinical HIPster'[Start time])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('Clinical_HIPster'[Start time])), 1, 1), Date(Year(MAX('Clinical_HIPster'[Start time])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -3064,7 +3120,2277 @@
             "name": "LocalDateTable_7feae086-e6ce-4a2b-8b1c-c34c7fadbfc2",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Clinical HIPster'[Completion time])), 1, 1), Date(Year(MAX('Clinical HIPster'[Completion time])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('Clinical_HIPster'[Completion time])), 1, 1), Date(Year(MAX('Clinical_HIPster'[Completion time])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Clinical_Caregiver",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "Name"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7cbe011e-1898-42ac-8635-14aebdbca9c8",
+            "sourceColumn": "ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Start time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "8cc63ee3-11c2-467a-893f-7ef6228bef0a",
+            "sourceColumn": "Start time",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_dcc7bf46-04a3-412a-b48e-f69c9cfea24f"
+                },
+                "isDefault": true,
+                "relationship": "34e19c9c-4337-41c3-8150-1fa29cfa6f46"
+              }
+            ]
+          },
+          {
+            "name": "Completion time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "86a71391-940a-4d96-96c4-5c3ede8795a0",
+            "sourceColumn": "Completion time",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_d712fb1c-5106-4959-a9d1-0f997023ecb3"
+                },
+                "isDefault": true,
+                "relationship": "d71a2cde-e1d8-4363-946d-9fa80c734d39"
+              }
+            ]
+          },
+          {
+            "name": "Email",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c1fbce8b-4083-4994-9414-a0fea1d7b887",
+            "sourceColumn": "Email",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9429166c-9166-4763-94dc-1a4f1e69332b",
+            "sourceColumn": "Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Last modified time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ef5fdf37-5326-4ba2-ad05-8dbeee64f2b6",
+            "sourceColumn": "Last modified time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "My HIPster's Gender:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "94e95aaf-a002-433e-9799-1e6bf4874e08",
+            "sourceColumn": "My HIPster's Gender:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Type of Therapy Received (may select more than one):",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b2fef85d-9559-4fd6-82e3-f6c859bc8bb0",
+            "sourceColumn": "Type of Therapy Received (may select more than one):",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "I am satisfied with the therapy services at MP.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "097f43a3-db33-48af-9e2f-dda8894e1ab8",
+            "sourceColumn": "I am satisfied with the therapy services at MP.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "My HIPster's daily living skills have improved since starting therapy at MP.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1d54b198-bd15-4cba-8195-d873729b2146",
+            "sourceColumn": "My HIPster's daily living skills have improved since starting therapy at MP.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "My HIPster's social skills have improved since starting therapy at MP.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5f2a83a1-fa60-44a5-b001-1543d97c83cf",
+            "sourceColumn": "My HIPster's social skills have improved since starting therapy at MP.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "My HIPster's communication skills have improved since starting therapy at MP.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "49740d5c-1332-4332-9509-54fcfaccd2a9",
+            "sourceColumn": "My HIPster's communication skills have improved since starting therapy at MP.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "My HIPster is more independent since starting therapy services at MP.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2796226a-9f56-436c-be9c-3f7c7defc8a1",
+            "sourceColumn": "My HIPster is more independent since starting therapy services at MP.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The therapy program is addressing the specific needs of my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1e11b286-a010-40f6-bb98-6f171d64acb9",
+            "sourceColumn": "The therapy program is addressing the specific needs of my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "I would like to see additional therapy services added to the program.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "13d6808d-24d0-4075-9e5a-8a9239fc279b",
+            "sourceColumn": "I would like to see additional therapy services added to the program.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Therapy staff is flexible and adapts to accommodate HIPsters' needs.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a5d1317e-f602-49f2-8055-4f438fcbc85a",
+            "sourceColumn": "Therapy staff is flexible and adapts to accommodate HIPsters' needs.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Therapy staff communicates effectively regarding therapy goals and schedules.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3537ac2a-80e4-4ed0-90e7-9e4c5f700bbf",
+            "sourceColumn": "Therapy staff communicates effectively regarding therapy goals and schedules.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "26f3ab4d-3d0b-4b72-8421-3fe1389c00de",
+            "sourceColumn": "The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Is there anything you would like to share with the Clinical Services Department?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "677f37bc-60fd-420f-b679-5aa584f369af",
+            "sourceColumn": "Is there anything you would like to share with the Clinical Services Department?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) HIPster's name:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "42072c7a-6a6b-4831-af2d-86492ac7d1d7",
+            "sourceColumn": "(Optional) HIPster's name:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) Your name:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f04b9f43-b018-4d4e-8ace-1ffd3b4e422c",
+            "sourceColumn": "(Optional) Your name:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) Your email address:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1e625170-c928-4a8e-b6c1-58ed85272cf2",
+            "sourceColumn": "(Optional) Your email address:",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "a2a817c7-2c90-4313-a7df-e6ac3fc500a9",
+        "partitions": [
+          {
+            "name": "Clinical_Caregiver",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\Sean Cairns\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\Clinical\\Clinical ServicesCaregiver Survey(1-43).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"My HIPster's Gender:\", type text}, {\"Type of Therapy Received (may select more than one):\", type text}, {\"I am satisfied with the therapy services at MP.\", type text}, {\"My HIPster's daily living skills have improved since starting therapy at MP.\", type text}, {\"My HIPster's social skills have improved since starting therapy at MP.\", type text}, {\"My HIPster's communication skills have improved since starting therapy at MP.\", type text}, {\"My HIPster is more independent since starting therapy services at MP.\", type text}, {\"The therapy program is addressing the specific needs of my HIPster.\", type text}, {\"I would like to see additional therapy services added to the program.\", type text}, {\"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", type text}, {\"Therapy staff communicates effectively regarding therapy goals and schedules.\", type text}, {\"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", type text}, {\"Is there anything you would like to share with the Clinical Services Department?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_dcc7bf46-04a3-412a-b48e-f69c9cfea24f",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "79dbe175-7d91-4b23-826b-e9ec93264281",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "3d7837bf-b538-4741-ac6f-6ee1db273c25",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "45e3e22f-d5e6-420d-bb82-7a5e18e9fb1e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "9d6d1f35-f869-4dcc-b117-d0d8ec3ad214",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "e2ae3c2d-a005-420c-b180-ad9fce0b2e89",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "42d3e864-20fa-4bee-80e4-b2225bf02929",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "1e65aa59-cb94-4fbd-99aa-d421a041c87a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "69a2f6bb-303b-43b5-bc15-76b39a257908",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "108a4072-aec5-4d2a-b777-4f03fe553e7c",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "6f64bcf3-3a7d-4214-a22f-208bdf63369d",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "0cd326a5-76c4-4aa2-9471-6eab8f7928a7",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "d04fff77-b606-44d7-87d3-d71190561ceb"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "e8dedc4e-a9b0-4028-b98d-8bf1c9a2c9e0",
+        "partitions": [
+          {
+            "name": "LocalDateTable_dcc7bf46-04a3-412a-b48e-f69c9cfea24f",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Clinical_Caregiver'[Start time])), 1, 1), Date(Year(MAX('Clinical_Caregiver'[Start time])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_d712fb1c-5106-4959-a9d1-0f997023ecb3",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "d0d2fa16-9594-495a-9a76-9e99c7f05470",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "777f2cd7-f69e-4c88-80bf-61ad1ecd78ea",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "a087c3c4-6ddc-4929-8974-ac8c6c74f97a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "96748917-a3de-4696-8809-0a28060586f5",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "636c2d9e-1f5e-409a-b44f-a389d883e20b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "5bff77bf-abaf-4ff4-a6cd-23d325d5db2b",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "308005e2-b54f-40e3-a86d-b2a454e33051",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "f83518e3-d04d-4334-9e60-c239050d9e75",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "77ecabf3-abb4-4f9f-827c-84fe7b3abf34",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "1fd6d120-4927-4452-ad57-29b7c67f2a29",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "66f936cf-e206-4d68-82f7-6a31c29cef54",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "e17af687-1350-4cde-876e-a4e86f0b50ce"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "854ca906-4862-4c9c-b815-6a0b5b9018fd",
+        "partitions": [
+          {
+            "name": "LocalDateTable_d712fb1c-5106-4959-a9d1-0f997023ecb3",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Clinical_Caregiver'[Completion time])), 1, 1), Date(Year(MAX('Clinical_Caregiver'[Completion time])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Online_HIPster",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "Name"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7252df6c-cf09-4426-8284-f5fceb320289",
+            "sourceColumn": "ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Start time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "5ce41992-c450-41de-892c-8aa22c1c7e6d",
+            "sourceColumn": "Start time",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_c92dc086-a702-454e-b217-3a3160992764"
+                },
+                "isDefault": true,
+                "relationship": "f77bc429-3588-4857-898b-05306d0752a0"
+              }
+            ]
+          },
+          {
+            "name": "Completion time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "39cae09a-67f1-48e4-972b-9a7ccfe38add",
+            "sourceColumn": "Completion time",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_df8ef5e0-b131-4083-a0ee-dfb61032f35a"
+                },
+                "isDefault": true,
+                "relationship": "d099ced7-be29-4c05-aefd-a7b70f32d496"
+              }
+            ]
+          },
+          {
+            "name": "Email",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cc76c8fe-95be-4412-bf91-94ac6ac5fee7",
+            "sourceColumn": "Email",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9d548d1f-c19d-4a33-921b-d4c51047682c",
+            "sourceColumn": "Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Last modified time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7b93bd0b-d2c8-4cdc-a6b6-85d281d06e6e",
+            "sourceColumn": "Last modified time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "HIPster's Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fb4bc95f-11c0-425c-91c4-48730b1e55ea",
+            "sourceColumn": "HIPster's Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Gender:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b58fcf09-9d7b-497c-9cd7-e4731947b365",
+            "sourceColumn": "Gender:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "How do you attend My Possibilities?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "91f3c6a7-eebe-4cb0-a6b8-5d200f044f6f",
+            "sourceColumn": "How do you attend My Possibilities?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "How many days per week do you attend MP Online?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "111755a5-ec26-4098-b748-0d3a49f97e0b",
+            "sourceColumn": "How many days per week do you attend MP Online?",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Do you like being a HIPster at MP?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "96f35c19-753d-46ba-8201-65c241c14a9f",
+            "sourceColumn": "Do you like being a HIPster at MP?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Is MP Online the place you want to be?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "18bff305-2dd7-4410-858c-eda2398af0f0",
+            "sourceColumn": "Is MP Online the place you want to be?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Have you learned something new at MP Online?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6b713953-c9ae-439b-a5ff-e00d189bcbeb",
+            "sourceColumn": "Have you learned something new at MP Online?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Does your instructor care about you?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a3cb095a-4063-4167-95d1-1a0a57bd1bd5",
+            "sourceColumn": "Does your instructor care about you?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Have you made friends with other HIPsters?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "646606bc-c216-44ce-9450-1fbc04c0086c",
+            "sourceColumn": "Have you made friends with other HIPsters?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you pick your own classes?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "02b46d76-dea9-4296-8d03-6fd360306680",
+            "sourceColumn": "Do you pick your own classes?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Can you share what you know with your class?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bc36d5d0-9550-4f0b-b9f9-e16e3732074e",
+            "sourceColumn": "Can you share what you know with your class?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Do you keep trying even when things are hard to do?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "faa1dc48-385d-46c9-a822-9e131bda4650",
+            "sourceColumn": "Do you keep trying even when things are hard to do?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Does MP Online help you learn to make good choices?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0b8768f2-6acc-4a07-b8f0-9501c24d7a0b",
+            "sourceColumn": "Does MP Online help you learn to make good choices?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Are you excited about your future?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d8e43db8-7b1b-45f8-a0b6-8afe5a2333fd",
+            "sourceColumn": "Are you excited about your future?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "What do you like best about being a HIPster:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3ac7db00-4acd-41d1-96c3-7e192263d7c1",
+            "sourceColumn": "What do you like best about being a HIPster:",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "5d3e6e78-d638-4ccf-9bc7-54a3922945a5",
+        "partitions": [
+          {
+            "name": "Online_HIPster",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\Sean Cairns\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\Online\\Online HIPster Survey(1-14).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Name\", type text}, {\"Gender:\", type text}, {\"How do you attend My Possibilities?\", type text}, {\"How many days per week do you attend MP Online?\", Int64.Type}, {\"Do you like being a HIPster at MP?\", type text}, {\"Is MP Online the place you want to be?\", type text}, {\"Have you learned something new at MP Online?\", type text}, {\"Does your instructor care about you?\", type text}, {\"Have you made friends with other HIPsters?\", type text}, {\"Do you pick your own classes?\", type text}, {\"Can you share what you know with your class?\", type text}, {\"Do you keep trying even when things are hard to do?\", type text}, {\"Does MP Online help you learn to make good choices?\", type text}, {\"Are you excited about your future?\", type text}, {\"What do you like best about being a HIPster:\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_c92dc086-a702-454e-b217-3a3160992764",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "af011e9e-748c-4f4c-af4e-8d4b8898e3ba",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "96ec3431-481a-4d71-b2c2-5f5aed204d8e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "73e791ec-858a-4615-8b0d-8a816442fdd1",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "07296a8e-ee6b-4b8f-afb0-33ed1ae5e685",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "42d08f2c-cc7a-474b-8838-e722a14ccf8d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "5940d6fe-442b-4575-8e4f-dd5649a384c5",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "7e116878-c3ee-4df7-ba83-855661ca01ef",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "3a5a63ec-6072-4771-a1f3-93e31b22536a",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "046049d2-6de4-4eab-bd13-d054d5bfbb48",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "adbfb9b5-e577-4eb5-bb48-d2d65cbef9bb",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "7f086451-14f8-4d5e-9fb2-7691ee63d009",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "b02b2415-aea5-4088-bf8a-6e15f8beae85"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "872c6f06-53c3-4e95-be8d-ade04f048f52",
+        "partitions": [
+          {
+            "name": "LocalDateTable_c92dc086-a702-454e-b217-3a3160992764",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Online_HIPster'[Start time])), 1, 1), Date(Year(MAX('Online_HIPster'[Start time])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_df8ef5e0-b131-4083-a0ee-dfb61032f35a",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "95482ab3-bff8-461a-85f5-f868476419a9",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "1f547ad4-c795-4718-8861-47ec44a95c6a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "01b8dd08-5f9f-43a0-985b-8a39937bb5a2",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "7c9ac3e3-d951-4baa-afc7-d094865d8cce",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "4362fefd-f36d-46a5-b296-9a54062785b9",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "1e98eea4-5012-4425-a7b0-8afb4cbb8e55",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "5f620a0f-3043-46c8-9249-5fef0625d9bd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "1837f7f7-ee81-48c9-a098-2d2ccaeb5cc5",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "fe665d02-86f8-40f0-a422-a78e146afc3b",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "8e77be81-4604-470e-8245-e9efa8bd5e1f",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "c1786b9c-2380-4376-b85d-3189a5457f28",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "bdd589e1-1d91-4738-bec9-beb202a8ec12"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "775cd6a3-fd1a-405c-b808-189f45c48f0d",
+        "partitions": [
+          {
+            "name": "LocalDateTable_df8ef5e0-b131-4083-a0ee-dfb61032f35a",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Online_HIPster'[Completion time])), 1, 1), Date(Year(MAX('Online_HIPster'[Completion time])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Online_Caregiver",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "Name"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2e67faef-1285-450f-a1ee-71aa4792c384",
+            "sourceColumn": "ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Start time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "55bf8ba6-861a-4cf1-8783-9565f5446488",
+            "sourceColumn": "Start time",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_b2f1d195-f7a2-421a-9d16-a623b2464d99"
+                },
+                "isDefault": true,
+                "relationship": "5bdb470e-8533-40c8-a66b-7e5b600e61fa"
+              }
+            ]
+          },
+          {
+            "name": "Completion time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "94cc9701-9560-4117-8cef-c00bf304b5d8",
+            "sourceColumn": "Completion time",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_13840275-1257-40ab-816e-2408dc15b9d2"
+                },
+                "isDefault": true,
+                "relationship": "06916f65-7f4f-4d41-bea9-becf967cffb3"
+              }
+            ]
+          },
+          {
+            "name": "Email",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b9e0e508-67ac-42ff-b926-28143bdf98aa",
+            "sourceColumn": "Email",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "058af57a-ab1f-4f93-8d02-3c8e7e748b62",
+            "sourceColumn": "Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Last modified time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4f5ef777-e1d6-483d-855d-7d6c388dae45",
+            "sourceColumn": "Last modified time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "HIPster's Medicaid Waiver Assigned Level of Need (LON):",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c8380228-0ec1-483d-bd9d-38fc23a16e68",
+            "sourceColumn": "HIPster's Medicaid Waiver Assigned Level of Need (LON):",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "HIPster's Gender:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "72b1760b-dfba-4087-81f5-d7c1d766aa01",
+            "sourceColumn": "HIPster's Gender:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Number of Days a Week HIPster attends MP Online Classes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2a61206c-526a-49de-a7cc-54fe50f5f24c",
+            "sourceColumn": "Number of Days a Week HIPster attends MP Online Classes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "What year did your HIPster begin MP Online?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3969da0a-2945-4f41-bb46-d11828a9a96e",
+            "sourceColumn": "What year did your HIPster begin MP Online?",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "MP Online meet the needs of my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "88149e70-4949-4429-8f04-57a1410a9ed4",
+            "sourceColumn": "MP Online meet the needs of my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online provides a safe and supportive environment for my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1abb00c7-7b16-4261-8420-69564903567e",
+            "sourceColumn": "MP Online provides a safe and supportive environment for my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online promote socialization, skill-building, and personal growth.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bb08f1ef-995d-4b3b-ba9d-914c2a8e30f3",
+            "sourceColumn": "MP Online promote socialization, skill-building, and personal growth.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6337850d-5643-48df-8cae-2f8daded09c1",
+            "sourceColumn": "MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online structure and routine work well for my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "55d5a8b7-7e00-442e-988a-478ed2799c99",
+            "sourceColumn": "The MP Online structure and routine work well for my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online staff addresses the individual needs of my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c0827b60-d74c-4ff0-bdb9-911546bfc283",
+            "sourceColumn": "The MP Online staff addresses the individual needs of my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online program is flexible and accommodates my HIPsters's needs.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0b33bd50-3b3c-4974-9841-0b9aa3c78753",
+            "sourceColumn": "The MP Online program is flexible and accommodates my HIPsters's needs.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b5ae5d50-524e-4053-a3ba-f4f89cef51e2",
+            "sourceColumn": "The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Transportation is a challenge for my HIPster to attend MP in person",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "01ea7b00-2c0b-44f5-90b4-780ba92ca199",
+            "sourceColumn": "Transportation is a challenge for my HIPster to attend MP in person",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The cost of the program limits how often my HIPster can attend.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dc74e322-3fe7-41bf-b5b9-da17560a95ae",
+            "sourceColumn": "The cost of the program limits how often my HIPster can attend.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8d5da763-fe4c-493e-abe0-66086d79f795",
+            "sourceColumn": "Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Is there anything you would like to share with the MP Leadership Team?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "444c2aa6-4e96-4dc3-bcb9-743dbdc8e0bf",
+            "sourceColumn": "Is there anything you would like to share with the MP Leadership Team?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) HIPster's name:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f926b806-98d3-4556-b2c0-667f175bd633",
+            "sourceColumn": "(Optional) HIPster's name:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) Your name:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d91377b4-0835-4ae3-a738-d3200dbac344",
+            "sourceColumn": "(Optional) Your name:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) Your email address:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ff2e9b89-ef2b-4b4a-93ad-08f7fa3871c3",
+            "sourceColumn": "(Optional) Your email address:",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "afad2b61-44e4-4c38-b8dd-f6517b605f65",
+        "partitions": [
+          {
+            "name": "Online_Caregiver",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\Sean Cairns\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\Online\\Online Caregiver Survey(1-12).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", type text}, {\"HIPster's Gender:\", type text}, {\"Number of Days a Week HIPster attends MP Online Classes\", Int64.Type}, {\"What year did your HIPster begin MP Online?\", Int64.Type}, {\"MP Online meet the needs of my HIPster.\", type text}, {\"MP Online provides a safe and supportive environment for my HIPster.\", type text}, {\"MP Online promote socialization, skill-building, and personal growth.\", type text}, {\"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", type text}, {\"The MP Online structure and routine work well for my HIPster.\", type text}, {\"The MP Online staff addresses the individual needs of my HIPster.\", type text}, {\"The MP Online program is flexible and accommodates my HIPsters's needs.\", type text}, {\"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", type text}, {\"Transportation is a challenge for my HIPster to attend MP in person\", type text}, {\"The cost of the program limits how often my HIPster can attend.\", type text}, {\"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", type text}, {\"Is there anything you would like to share with the MP Leadership Team?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_b2f1d195-f7a2-421a-9d16-a623b2464d99",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "32d7ee3c-2840-4a0e-8321-9c05ac2d1817",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "b957445c-bc6a-42cb-9ce0-556cd287dae6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "7cf9a67b-e64a-4898-a17c-56692ee80f35",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "e8b77a00-7d14-45dd-8340-916fcba6ef87",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "b62c1d54-6cfe-4bc7-842a-99fb35ce069d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "a78fd4b9-f38b-49ed-970a-ae635d527b8b",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "6f7d5b21-b641-4db2-ab96-c1a0bbd648bb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "6cdf6c01-0b54-47dd-b2e8-452eae45ceca",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "609d71bc-c48a-4f86-986f-5c2a81605786",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "62fcb1c1-f1b5-433f-a11f-3c6fc8b7a17f",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "f7c60014-b5af-4624-b057-779f6ca2f94c",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "875442ca-3e04-4db9-abe9-5964c51f458c"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "54d6c4e4-1d62-495f-8b83-b3e02d9a7fda",
+        "partitions": [
+          {
+            "name": "LocalDateTable_b2f1d195-f7a2-421a-9d16-a623b2464d99",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Online_Caregiver'[Start time])), 1, 1), Date(Year(MAX('Online_Caregiver'[Start time])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_13840275-1257-40ab-816e-2408dc15b9d2",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "f7537689-4adb-4fd9-ab1c-42d44b61c964",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "058e1675-3bb7-4a71-9591-c557609783a3",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "8c22251c-5fdf-4447-80ec-1d78f4f4f2ee",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "c9a8fe08-0792-43bf-a678-5870801cd452",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "266f0963-28f9-4e2d-9eb6-f0e5b0bccccb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "d7e90c17-808f-4dc7-b609-ec730ecf3e75",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "67ccd8cc-ef0c-41fb-8485-e88cb2162a1c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "7d02101e-fb65-4b14-9031-6632ffb88a4c",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "f85217a1-0d9f-4cbe-9a9b-2e7adff6b3a1",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "84e71dc2-5893-4a99-969f-9424f94e1ca8",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "bd9607d1-b3f5-4f6b-9bc1-f8110d5f937f",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "efc4c46b-805d-454f-8ba3-6af42502c0ad"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "649425fd-6b55-4b3a-8348-2da9f378d2ac",
+        "partitions": [
+          {
+            "name": "LocalDateTable_13840275-1257-40ab-816e-2408dc15b9d2",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Online_Caregiver'[Completion time])), 1, 1), Date(Year(MAX('Online_Caregiver'[Completion time])), 12, 31))",
               "type": "calculated"
             }
           }
