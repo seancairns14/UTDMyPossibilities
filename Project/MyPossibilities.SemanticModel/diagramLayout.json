@@ -18,7 +18,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -26,6 +26,18 @@
             "y": 0
           },
           "nodeIndex": "Hipster",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 0
+          },
+          "nodeIndex": "Clinical HIPster",
           "size": {
             "height": 300,
             "width": 234
