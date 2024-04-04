@@ -1730,6 +1730,31 @@
           }
         ],
         "lineageTag": "26e70a20-158d-4099-9229-a13d910c548f",
+        "measures": [
+          {
+            "name": "I Like Therapy at MP",
+            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Do you like therapy at MP?] <> \"No\") / COUNTROWS(Clinical_HIPster))",
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "6ebfe914-7605-418f-94a4-2ca809d67128"
+          },
+          {
+            "name": "Therapist Helps Me Learn New Skills",
+            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Does your therapist help you learn new skills?] <> \"No\") / COUNTROWS(Clinical_HIPster))",
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "c3a99eb0-b15d-4252-9856-976ed93fb4ca"
+          },
+          {
+            "name": "I Choose What I Work On In Therapy",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Did you choose what you're working on in therapy?] <> \"No\") / COUNTROWS(Clinical_HIPster))",
+            "lineageTag": "731d7110-85fe-42a5-a7a6-5f3b8f54d51b"
+          }
+        ],
         "partitions": [
           {
             "name": "Clinical_HIPster",
