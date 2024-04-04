@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.52\",\"type\":2},\"customTheme\":{\"name\":\"AccessibleDefault\",\"version\":\"5.52\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "publicCustomVisuals": [
     "advanceCardE03760C5AB684758B56AA29F9E6C257B"
@@ -9,6 +9,11 @@
       "resourcePackage": {
         "disabled": false,
         "items": [
+          {
+            "name": "AccessibleDefault",
+            "path": "BuiltInThemes/AccessibleDefault.json",
+            "type": 201
+          },
           {
             "name": "CY24SU02",
             "path": "BaseThemes/CY24SU02.json",
@@ -39,7 +44,7 @@
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"0fdde5bc6c80c2c74e42\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48.292682926829265,\"y\":42.4390243902439,\"z\":0,\"width\":1400,\"height\":1100,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"0fdde5bc6c80c2c74e42\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48.292682926829265,\"y\":42.4390243902439,\"z\":0,\"width\":1400,\"height\":1100,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 1100.00,
           "width": 1400.00,
@@ -48,13 +53,13 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"d62ad9db0893986d4945\",\"layouts\":[{\"id\":0,\"position\":{\"x\":677.560975609756,\"y\":323.4146341463415,\"z\":1001,\"width\":222.4390243902439,\"height\":196.09756097560975,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"LLL_Hipster.I'm Excited about My Future\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I'm Excited about My Future\"},\"Name\":\"LLL_Hipster.I'm Excited about My Future\",\"NativeReferenceName\":\"I'm Excited about My Future\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I'm Excited about My Future\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "config": "{\"name\":\"d62ad9db0893986d4945\",\"layouts\":[{\"id\":0,\"position\":{\"x\":677.560975609756,\"y\":323.4146341463415,\"z\":2000,\"width\":222.4390243902439,\"height\":196.09756097560975,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"LLL_Hipster.I'm Excited about My Future\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I'm Excited about My Future\"},\"Name\":\"LLL_Hipster.I'm Excited about My Future\",\"NativeReferenceName\":\"I'm Excited about My Future\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I'm Excited about My Future\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
           "filters": "[{\"name\":\"Filterf34e312b4cc6d2b4171c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LLL_Hipster\"}},\"Property\":\"Gender:\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'None'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
           "height": 196.10,
           "width": 222.44,
           "x": 677.56,
           "y": 323.41,
-          "z": 1001.00
+          "z": 2000.00
         }
       ],
       "width": 1500.00
@@ -78,8 +83,138 @@
       "height": 720.00,
       "name": "ReportSection2b1b0f181aa5582509d5",
       "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"17b476ab4562dd5350dc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":581.0344827586207,\"y\":467.2413793103449,\"z\":8000,\"width\":343.1034482758621,\"height\":251.7241379310345,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Online_HIPster.Have you made friends with other HIPsters?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.Have you made friends with other HIPsters?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Have you made friends with other HIPsters?\"},\"Name\":\"Online_HIPster.Have you made friends with other HIPsters?\",\"NativeReferenceName\":\"Have you made friends with other HIPsters?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Have you made friends with other HIPsters?\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.Have you made friends with other HIPsters?)\",\"NativeReferenceName\":\"Count of Have you made friends with other HIPsters?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Have you made friends with other HIPsters?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 251.72,
+          "width": 343.10,
+          "x": 581.03,
+          "y": 467.24,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"1bbc441651cb2444ce73\",\"layouts\":[{\"id\":0,\"position\":{\"x\":979.3103448275863,\"y\":0,\"z\":10000,\"width\":300,\"height\":300,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Online_HIPster.How many days per week do you attend MP Online?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.How many days per week do you attend MP Online?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"How many days per week do you attend MP Online?\"},\"Name\":\"Online_HIPster.How many days per week do you attend MP Online?\",\"NativeReferenceName\":\"How many days per week do you attend MP Online?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"How many days per week do you attend MP Online?\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.How many days per week do you attend MP Online?)\",\"NativeReferenceName\":\"Count of How many days per week do you attend MP Online?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"How many days per week do you attend MP Online?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 300.00,
+          "width": 300.00,
+          "x": 979.31,
+          "y": 0.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"2f0f59f401ab8281a2d9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":591.3793103448277,\"y\":286.2068965517242,\"z\":6000,\"width\":332.7586206896552,\"height\":194.82758620689657,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Online_HIPster.Does your instructor care about you?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.Does your instructor care about you?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Does your instructor care about you?\"},\"Name\":\"Online_HIPster.Does your instructor care about you?\",\"NativeReferenceName\":\"Does your instructor care about you?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Does your instructor care about you?\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.Does your instructor care about you?)\",\"NativeReferenceName\":\"Count of Does your instructor care about you?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Does your instructor care about you?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 194.83,
+          "width": 332.76,
+          "x": 591.38,
+          "y": 286.21,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"3a143e2d0177008971a0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":289.65517241379314,\"y\":536.2068965517242,\"z\":10001,\"width\":301.7241379310345,\"height\":184.48275862068968,\"tabOrder\":10001}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Online_HIPster.Is MP Online the place you want to be?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.Is MP Online the place you want to be?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Is MP Online the place you want to be?\"},\"Name\":\"Online_HIPster.Is MP Online the place you want to be?\",\"NativeReferenceName\":\"Is MP Online the place you want to be?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Is MP Online the place you want to be?\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.Is MP Online the place you want to be?)\",\"NativeReferenceName\":\"Count of Is MP Online the place you want to be?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Is MP Online the place you want to be?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 184.48,
+          "width": 301.72,
+          "x": 289.66,
+          "y": 536.21,
+          "z": 10001.00
+        },
+        {
+          "config": "{\"name\":\"42269dd2b209d01d8131\",\"layouts\":[{\"id\":0,\"position\":{\"x\":986.2068965517242,\"y\":255.17241379310346,\"z\":7000,\"width\":279.3103448275862,\"height\":208.62068965517244,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Online_HIPster.Have you learned something new at MP Online?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.Have you learned something new at MP Online?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Have you learned something new at MP Online?\"},\"Name\":\"Online_HIPster.Have you learned something new at MP Online?\",\"NativeReferenceName\":\"Have you learned something new at MP Online?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Have you learned something new at MP Online?\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.Have you learned something new at MP Online?)\",\"NativeReferenceName\":\"Count of Have you learned something new at MP Online?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Have you learned something new at MP Online?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 208.62,
+          "width": 279.31,
+          "x": 986.21,
+          "y": 255.17,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"46a16b9bc40730a91766\",\"layouts\":[{\"id\":0,\"position\":{\"x\":294.82758620689657,\"y\":339.65517241379314,\"z\":4000,\"width\":293.1034482758621,\"height\":127.58620689655173,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Online_HIPster.Do you pick your own classes?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.Do you pick your own classes?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Do you pick your own classes?\"},\"Name\":\"Online_HIPster.Do you pick your own classes?\",\"NativeReferenceName\":\"Do you pick your own classes?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Do you pick your own classes?\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.Do you pick your own classes?)\",\"NativeReferenceName\":\"Count of Do you pick your own classes?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Do you pick your own classes?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 127.59,
+          "width": 293.10,
+          "x": 294.83,
+          "y": 339.66,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"550def8106dac4b902b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":317.2413793103448,\"y\":0,\"z\":2000,\"width\":436.2068965517242,\"height\":134.48275862068965,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Online_HIPster.What do you like best about being a HIPster:\"},{\"queryRef\":\"Online_HIPster.Have you made friends with other HIPsters?\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"What do you like best about being a HIPster:\"},\"Name\":\"Online_HIPster.What do you like best about being a HIPster:\",\"NativeReferenceName\":\"What do you like best about being a HIPster:\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Have you made friends with other HIPsters?\"},\"Name\":\"Online_HIPster.Have you made friends with other HIPsters?\",\"NativeReferenceName\":\"Have you made friends with other HIPsters?\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"What do you like best about being a HIPster:\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 134.48,
+          "width": 436.21,
+          "x": 317.24,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"59c5be7b7c7a97563e4c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":362.0689655172414,\"z\":1000,\"width\":208.62068965517244,\"height\":344.82758620689657,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Series\":[{\"queryRef\":\"Online_HIPster.Do you pick your own classes?\"}],\"Category\":[{\"queryRef\":\"Online_HIPster.Do you pick your own classes?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.Do you pick your own classes?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Do you pick your own classes?\"},\"Name\":\"Online_HIPster.Do you pick your own classes?\",\"NativeReferenceName\":\"Do you pick your own classes?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Do you pick your own classes?\"}},\"Function\":2},\"Name\":\"CountNonNull(Online_HIPster.Do you pick your own classes?)\",\"NativeReferenceName\":\"Count of Do you pick your own classes?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Do you pick your own classes?\"}},\"Function\":2}}}]},\"queryOptions\":{\"keepProjectionOrder\":true},\"showAllRoles\":[\"Series\"],\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Online_HIPster\"}},\"Property\":\"Do you pick your own classes?\"}},\"Function\":5}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"expression\":{\"Arithmetic\":{\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Online_HIPster\"}},\"Property\":\"Do you pick your own classes?\"}},\"Function\":2}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Online_HIPster\"}},\"Property\":\"Do you pick your own classes?\"}},\"Function\":2}},\"Scope\":[]}},\"Operator\":3}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 344.83,
+          "width": 208.62,
+          "x": 0.00,
+          "y": 362.07,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"83bdbd08eb5ab6249340\",\"layouts\":[{\"id\":0,\"position\":{\"x\":656.3218390804598,\"y\":134.48275862068965,\"z\":9000,\"width\":300,\"height\":182.75862068965517,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Online_HIPster.How many days per week do you attend MP Online?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.How many days per week do you attend MP Online?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"How many days per week do you attend MP Online?\"},\"Name\":\"Online_HIPster.How many days per week do you attend MP Online?\",\"NativeReferenceName\":\"How many days per week do you attend MP Online?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"How many days per week do you attend MP Online?\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.How many days per week do you attend MP Online?)\",\"NativeReferenceName\":\"Count of How many days per week do you attend MP Online?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"How many days per week do you attend MP Online?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 182.76,
+          "width": 300.00,
+          "x": 656.32,
+          "y": 134.48,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"8f8ce73759676d66568b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":331.0344827586207,\"height\":232.75862068965517,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.Are you excited about your future?)\"}],\"Category\":[{\"queryRef\":\"Online_HIPster.Are you excited about your future?\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Are you excited about your future?\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.Are you excited about your future?)\",\"NativeReferenceName\":\"Count of Are you excited about your future?\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Are you excited about your future?\"},\"Name\":\"Online_HIPster.Are you excited about your future?\",\"NativeReferenceName\":\"Are you excited about your future?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Are you excited about your future?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"Filter8c6c5eb29517d088086b\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Online_HIPster\"}},\"Property\":\"Are you excited about your future?\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false},{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Online_HIPster\"}},\"Property\":\"Are you excited about your future?\"}},\"Function\":2}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"expression\":{\"Arithmetic\":{\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Online_HIPster\"}},\"Property\":\"Are you excited about your future?\"}},\"Function\":5}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Online_HIPster\"}},\"Property\":\"Are you excited about your future?\"}},\"Function\":5}},\"Scope\":[]}},\"Operator\":3}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 232.76,
+          "width": 331.03,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9e641150cee1a08c7cc4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":229.31034482758622,\"y\":481.0344827586207,\"z\":5000,\"width\":341.3793103448276,\"height\":239.6551724137931,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Online_HIPster.Does MP Online help you learn to make good choices?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.Does MP Online help you learn to make good choices?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Does MP Online help you learn to make good choices?\"},\"Name\":\"Online_HIPster.Does MP Online help you learn to make good choices?\",\"NativeReferenceName\":\"Does MP Online help you learn to make good choices?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Does MP Online help you learn to make good choices?\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.Does MP Online help you learn to make good choices?)\",\"NativeReferenceName\":\"Count of Does MP Online help you learn to make good choices?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Does MP Online help you learn to make good choices?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 239.66,
+          "width": 341.38,
+          "x": 229.31,
+          "y": 481.03,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"9ed3cc72c31e84c500c4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":924.1379310344828,\"y\":467.2413793103449,\"z\":3000,\"width\":355.1724137931035,\"height\":253.44827586206898,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Online_HIPster.How do you attend My Possibilities?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.How do you attend My Possibilities?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"How do you attend My Possibilities?\"},\"Name\":\"Online_HIPster.How do you attend My Possibilities?\",\"NativeReferenceName\":\"How do you attend My Possibilities?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"How do you attend My Possibilities?\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.How do you attend My Possibilities?)\",\"NativeReferenceName\":\"Count of How do you attend My Possibilities?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"How do you attend My Possibilities?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 253.45,
+          "width": 355.17,
+          "x": 924.14,
+          "y": 467.24,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b7681f6004a6beb0a6ec\",\"layouts\":[{\"id\":0,\"position\":{\"x\":331,\"y\":134,\"width\":325,\"height\":150,\"z\":10002,\"tabOrder\":10002}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Online_HIPster.Gender:\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Online_HIPster.Gender:)\"}],\"Series\":[{\"queryRef\":\"Online_HIPster.Gender:\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Online_HIPster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Gender:\"},\"Name\":\"Online_HIPster.Gender:\",\"NativeReferenceName\":\"Gender:\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Gender:\"}},\"Function\":5},\"Name\":\"CountNonNull(Online_HIPster.Gender:)\",\"NativeReferenceName\":\"Count of Gender:\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Gender:\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 325.00,
+          "x": 331.00,
+          "y": 134.00,
+          "z": 10002.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "online",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionc6324469db13bd41b0e4",
+      "ordinal": 3,
       "visualContainers": [],
       "width": 1280.00
     }
-  ]
+  ],
+  "theme": "AccessibleDefault"
 }
