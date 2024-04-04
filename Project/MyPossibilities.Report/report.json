@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "publicCustomVisuals": [
     "advanceCardE03760C5AB684758B56AA29F9E6C257B"
@@ -30,15 +30,6 @@
       "name": "ReportSection",
       "visualContainers": [
         {
-          "config": "{\"name\":\"01fe1d6a56e1705514da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":150.64935064935065,\"y\":647.6190476190476,\"z\":1000,\"width\":469.26406926406924,\"height\":308.2251082251082,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Hipster.Gender:\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Hipster.Gender:)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"},\"Name\":\"Hipster.Gender:\",\"NativeReferenceName\":\"Gender:\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"}},\"Function\":5},\"Name\":\"CountNonNull(Hipster.Gender:)\",\"NativeReferenceName\":\"Count of Gender:\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
-          "filters": "[{\"name\":\"Filterf34e312b4cc6d2b4171c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LLL_Hipster\"}},\"Property\":\"Gender:\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'None'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
-          "height": 308.23,
-          "width": 469.26,
-          "x": 150.65,
-          "y": 647.62,
-          "z": 1000.00
-        },
-        {
           "config": "{\"name\":\"0fdde5bc6c80c2c74e42\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48.292682926829265,\"y\":42.4390243902439,\"z\":0,\"width\":1400,\"height\":1100,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 1100.00,
@@ -48,55 +39,28 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"2b84560916d993bcab62\",\"layouts\":[{\"id\":0,\"position\":{\"x\":100,\"y\":100,\"width\":300,\"height\":300,\"z\":3004,\"tabOrder\":3004}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"LLL_Hipster.Gender:\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(LLL_Hipster.Gender:)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Gender:\"},\"Name\":\"LLL_Hipster.Gender:\",\"NativeReferenceName\":\"Gender:\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Gender:\"}},\"Function\":5},\"Name\":\"CountNonNull(LLL_Hipster.Gender:)\",\"NativeReferenceName\":\"Count of Gender:\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Gender:\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 300.00,
-          "width": 300.00,
-          "x": 100.00,
-          "y": 100.00,
-          "z": 3004.00
-        },
-        {
-          "config": "{\"name\":\"370cac9373905dac9c2a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":988.3333333333334,\"y\":548.3333333333334,\"z\":3002,\"width\":300,\"height\":300,\"tabOrder\":3002}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"LLL_Hipster.Is MP the place you want to be?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(LLL_Hipster.Is MP the place you want to be?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Is MP the place you want to be?\"},\"Name\":\"LLL_Hipster.Is MP the place you want to be?\",\"NativeReferenceName\":\"Is MP the place you want to be?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Is MP the place you want to be?\"}},\"Function\":5},\"Name\":\"CountNonNull(LLL_Hipster.Is MP the place you want to be?)\",\"NativeReferenceName\":\"Count of Is MP the place you want to be?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Is MP the place you want to be?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 300.00,
-          "width": 300.00,
-          "x": 988.33,
-          "y": 548.33,
-          "z": 3002.00
-        },
-        {
-          "config": "{\"name\":\"a9172ab20e05c0a3d670\",\"layouts\":[{\"id\":0,\"position\":{\"x\":988.3333333333334,\"y\":178.33333333333334,\"z\":3003,\"width\":300,\"height\":300,\"tabOrder\":3003}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"LLL_Hipster.I Keep Trying When Things are Hard\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I Keep Trying When Things are Hard\"},\"Name\":\"LLL_Hipster.I Keep Trying When Things are Hard\",\"NativeReferenceName\":\"I Keep Trying When Things are Hard\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I Keep Trying When Things are Hard\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 300.00,
-          "width": 300.00,
-          "x": 988.33,
-          "y": 178.33,
-          "z": 3003.00
-        },
-        {
-          "config": "{\"name\":\"b3a4bb4243e7d17e14de\",\"layouts\":[{\"id\":0,\"position\":{\"x\":493.5064935064935,\"y\":43.290043290043286,\"z\":3000,\"width\":479.65367965367966,\"height\":491.7748917748918,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"LLL_Caregiver.How likely are you to recommend My Possibilities?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(LLL_Caregiver.How likely are you to recommend My Possibilities?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Caregiver\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"How likely are you to recommend My Possibilities?\"},\"Name\":\"LLL_Caregiver.How likely are you to recommend My Possibilities?\",\"NativeReferenceName\":\"How likely are you to recommend My Possibilities?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"How likely are you to recommend My Possibilities?\"}},\"Function\":5},\"Name\":\"CountNonNull(LLL_Caregiver.How likely are you to recommend My Possibilities?)\",\"NativeReferenceName\":\"Count of How likely are you to recommend My Possibilities?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"How likely are you to recommend My Possibilities?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"b3a4bb4243e7d17e14de\",\"layouts\":[{\"id\":0,\"position\":{\"x\":968,\"y\":44,\"z\":3000,\"width\":480,\"height\":492,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"LLL_Caregiver.How likely are you to recommend My Possibilities?\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(LLL_Caregiver.How likely are you to recommend My Possibilities?)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Caregiver\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"How likely are you to recommend My Possibilities?\"},\"Name\":\"LLL_Caregiver.How likely are you to recommend My Possibilities?\",\"NativeReferenceName\":\"How likely are you to recommend My Possibilities?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"How likely are you to recommend My Possibilities?\"}},\"Function\":5},\"Name\":\"CountNonNull(LLL_Caregiver.How likely are you to recommend My Possibilities?)\",\"NativeReferenceName\":\"Count of How likely are you to recommend My Possibilities?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"How likely are you to recommend My Possibilities?\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true}}",
           "filters": "[{\"name\":\"Filterba06e1d4e09a87e5b7b0\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LLL_Caregiver\"}},\"Property\":\"How likely are you to recommend My Possibilities?\"}},\"Function\":5}},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"Filter800f0999000ad703e80a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LLL_Caregiver\"}},\"Property\":\"How likely are you to recommend My Possibilities?\"}},\"type\":\"Categorical\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":1}]",
-          "height": 491.77,
-          "width": 479.65,
-          "x": 493.51,
-          "y": 43.29,
+          "height": 492.00,
+          "width": 480.00,
+          "x": 968.00,
+          "y": 44.00,
           "z": 3000.00
         },
         {
-          "config": "{\"name\":\"d62ad9db0893986d4945\",\"layouts\":[{\"id\":0,\"position\":{\"x\":638.3333333333334,\"y\":600,\"z\":2000,\"width\":223.33333333333334,\"height\":195,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"LLL_Hipster.I'm Excited about My Future\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I'm Excited about My Future\"},\"Name\":\"LLL_Hipster.I'm Excited about My Future\",\"NativeReferenceName\":\"I'm Excited about My Future\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I'm Excited about My Future\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
-          "filters": "[{\"name\":\"Filterf34e312b4cc6d2b4171c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LLL_Hipster\"}},\"Property\":\"Gender:\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'None'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
-          "height": 195.00,
-          "width": 223.33,
-          "x": 638.33,
-          "y": 600.00,
+          "config": "{\"name\":\"d62ad9db0893986d4945\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48,\"y\":44,\"z\":2000,\"width\":224,\"height\":196,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"LLL_Hipster.I'm Excited about My Future\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I'm Excited about My Future\"},\"Name\":\"LLL_Hipster.I'm Excited about My Future\",\"NativeReferenceName\":\"I'm Excited about My Future\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I'm Excited about My Future\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 196.00,
+          "width": 224.00,
+          "x": 48.00,
+          "y": 44.00,
           "z": 2000.00
         }
       ],
       "width": 1500.00
     },
     {
-      "config": "{}",
+      "config": "{\"objects\":{\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#96CA4F'\"}}}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
       "displayName": "Clinical",
       "displayOption": 1,
       "filters": "[]",
@@ -107,13 +71,24 @@
       "width": 1280.00
     },
     {
-      "config": "{}",
+      "config": "{\"objects\":{\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#96CA4F'\"}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"displayArea\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
       "displayName": "Online",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
       "name": "ReportSection2b1b0f181aa5582509d5",
       "ordinal": 2,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#96CA4F'\"}}}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection7d7918883b033e8bad3a",
+      "ordinal": 3,
       "visualContainers": [],
       "width": 1280.00
     }

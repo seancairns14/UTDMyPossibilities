@@ -1745,6 +1745,12 @@
           }
         ],
         "lineageTag": "a2a817c7-2c90-4313-a7df-e6ac3fc500a9",
+        "measures": [
+          {
+            "name": "Measure",
+            "lineageTag": "0be4982b-c4a9-4d9f-84a8-3b1ed9817315"
+          }
+        ],
         "partitions": [
           {
             "name": "Clinical_Caregiver",
