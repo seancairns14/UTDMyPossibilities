@@ -45,6 +45,16 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
           }
         ],
         "changedProperties": [
@@ -54,6 +64,10 @@
         ],
         "columns": [
           {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
             "name": "ID",
             "annotations": [
               {
@@ -126,6 +140,11 @@
             "summarizeBy": "none"
           },
           {
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
             "name": "My HIPster's Gender:",
             "annotations": [
               {
@@ -711,7 +730,15 @@
             "source": {
               "expression": [
                 "let",
+<<<<<<< Updated upstream
                 "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\LifeLongLearning\\Lifelong Learning Caregiver Survey(1-104).xlsx\"), null, true),",
+=======
+<<<<<<< HEAD
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\LifeLongLearning\\Lifelong Learning Caregiver Survey(1-104).xlsx\"), null, true),",
+=======
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\mlikh\\OneDrive\\Документы\\GitHub\\UTDMyPossibilities\\Sources\\LifeLongLearning\\Lifelong Learning Caregiver Survey(1-104).xlsx\"), null, true),",
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
                 "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", type text}, {\"My HIPster's Gender:\", type text}, {\"My HIPster's Hours of Attendance\", type text}, {\"My HIPsters Daily Schedule\", type text}, {\"The Number of Days a Week My HIPster attends MP\", Int64.Type}, {\"The Number of Years My HIPster has attended MP\", type text}, {\"MP programs meet the needs of my HIPster.\", type text}, {\"My HIPster has opportunities for community engagement, meaningful activities and events.\", type text}, {\"The MP structure and routine work well for my HIPster.\", type text}, {\"MP provides a safe and supportive environment for my HIPster.\", type text}, {\"MP programs promote socialization, skill-building, and personal growth.\", type text}, {\"MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.\", type text}, {\"MP staff is flexible and adapt to accommodate my HIPsters's needs.\", type text}, {\"MP staff addresses the individual needs of my HIPster.\", type text}, {\"MP communicates effectively regarding schedules, events, and activities.\", type text}, {\"MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.\", type text}, {\"Please rate the overall quality of programming received in 2023\", Int64.Type}, {\"How effectively has My Possibilities addressed your concerns and filled a void in your HIPsters life?\", Int64.Type}, {\"How likely are you to recommend My Possibilities?\", Int64.Type}, {\"The cost of the program limits how often my HIPster can attend.\", type text}, {\"Transportation is a challenge for my HIPster to attend MP\", type text}, {\"How can we improve our programming?\", type text}, {\"Are there any class topics you would like to see introduced to our programming?\", type text}, {\"How can we improve our our administrative processes? (billing, communications, events, etc.?)\", type text}, {\"What do you believe your HIPsters life would be like without the support and services provided by My Possibilities?\", type text}, {\"Is there any additional information you would like to share with the leadership team?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}}),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Name\", \"Last modified time\"}),",
@@ -719,9 +746,22 @@
                 "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Sorted Rows\",{\"Email\"}),",
                 "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Columns1\"),",
                 "    #\"Replaced Value\" = Table.ReplaceValue(#\"Removed Duplicates\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"My HIPster's Gender:\", \"My HIPster's Hours of Attendance\", \"My HIPsters Daily Schedule\", \"The Number of Days a Week My HIPster attends MP\", \"The Number of Years My HIPster has attended MP\", \"MP programs meet the needs of my HIPster.\", \"My HIPster has opportunities for community engagement, meaningful activities and events.\", \"The MP structure and routine work well for my HIPster.\", \"MP provides a safe and supportive environment for my HIPster.\", \"MP programs promote socialization, skill-building, and personal growth.\", \"MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.\", \"MP staff is flexible and adapt to accommodate my HIPsters's needs.\", \"MP staff addresses the individual needs of my HIPster.\", \"MP communicates effectively regarding schedules, events, and activities.\", \"MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Please rate the overall quality of programming received in 2023\", \"How effectively has My Possibilities addressed your concerns and filled a void in your HIPsters life?\", \"How likely are you to recommend My Possibilities?\", \"The cost of the program limits how often my HIPster can attend.\", \"Transportation is a challenge for my HIPster to attend MP\", \"How can we improve our programming?\", \"Are there any class topics you would like to see introduced to our programming?\", \"How can we improve our our administrative processes? (billing, communications, events, etc.?)\", \"What do you believe your HIPsters life would be like without the support and services provided by My Possibilities?\", \"Is there any additional information you would like to share with the leadership team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
+<<<<<<< Updated upstream
                 "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"My HIPster's Gender:\", \"My HIPster's Hours of Attendance\", \"My HIPsters Daily Schedule\", \"The Number of Days a Week My HIPster attends MP\", \"The Number of Years My HIPster has attended MP\", \"MP programs meet the needs of my HIPster.\", \"My HIPster has opportunities for community engagement, meaningful activities and events.\", \"The MP structure and routine work well for my HIPster.\", \"MP provides a safe and supportive environment for my HIPster.\", \"MP programs promote socialization, skill-building, and personal growth.\", \"MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.\", \"MP staff is flexible and adapt to accommodate my HIPsters's needs.\", \"MP staff addresses the individual needs of my HIPster.\", \"MP communicates effectively regarding schedules, events, and activities.\", \"MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Please rate the overall quality of programming received in 2023\", \"How effectively has My Possibilities addressed your concerns and filled a void in your HIPsters life?\", \"How likely are you to recommend My Possibilities?\", \"The cost of the program limits how often my HIPster can attend.\", \"Transportation is a challenge for my HIPster to attend MP\", \"How can we improve our programming?\", \"Are there any class topics you would like to see introduced to our programming?\", \"How can we improve our our administrative processes? (billing, communications, events, etc.?)\", \"What do you believe your HIPsters life would be like without the support and services provided by My Possibilities?\", \"Is there any additional information you would like to share with the leadership team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"})",
                 "in",
                 "    #\"Replaced Value1\""
+=======
+<<<<<<< HEAD
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"My HIPster's Gender:\", \"My HIPster's Hours of Attendance\", \"My HIPsters Daily Schedule\", \"The Number of Days a Week My HIPster attends MP\", \"The Number of Years My HIPster has attended MP\", \"MP programs meet the needs of my HIPster.\", \"My HIPster has opportunities for community engagement, meaningful activities and events.\", \"The MP structure and routine work well for my HIPster.\", \"MP provides a safe and supportive environment for my HIPster.\", \"MP programs promote socialization, skill-building, and personal growth.\", \"MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.\", \"MP staff is flexible and adapt to accommodate my HIPsters's needs.\", \"MP staff addresses the individual needs of my HIPster.\", \"MP communicates effectively regarding schedules, events, and activities.\", \"MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Please rate the overall quality of programming received in 2023\", \"How effectively has My Possibilities addressed your concerns and filled a void in your HIPsters life?\", \"How likely are you to recommend My Possibilities?\", \"The cost of the program limits how often my HIPster can attend.\", \"Transportation is a challenge for my HIPster to attend MP\", \"How can we improve our programming?\", \"Are there any class topics you would like to see introduced to our programming?\", \"How can we improve our our administrative processes? (billing, communications, events, etc.?)\", \"What do you believe your HIPsters life would be like without the support and services provided by My Possibilities?\", \"Is there any additional information you would like to share with the leadership team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"})",
+                "in",
+                "    #\"Replaced Value1\""
+=======
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"My HIPster's Gender:\", \"My HIPster's Hours of Attendance\", \"My HIPsters Daily Schedule\", \"The Number of Days a Week My HIPster attends MP\", \"The Number of Years My HIPster has attended MP\", \"MP programs meet the needs of my HIPster.\", \"My HIPster has opportunities for community engagement, meaningful activities and events.\", \"The MP structure and routine work well for my HIPster.\", \"MP provides a safe and supportive environment for my HIPster.\", \"MP programs promote socialization, skill-building, and personal growth.\", \"MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.\", \"MP staff is flexible and adapt to accommodate my HIPsters's needs.\", \"MP staff addresses the individual needs of my HIPster.\", \"MP communicates effectively regarding schedules, events, and activities.\", \"MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Please rate the overall quality of programming received in 2023\", \"How effectively has My Possibilities addressed your concerns and filled a void in your HIPsters life?\", \"How likely are you to recommend My Possibilities?\", \"The cost of the program limits how often my HIPster can attend.\", \"Transportation is a challenge for my HIPster to attend MP\", \"How can we improve our programming?\", \"Are there any class topics you would like to see introduced to our programming?\", \"How can we improve our our administrative processes? (billing, communications, events, etc.?)\", \"What do you believe your HIPsters life would be like without the support and services provided by My Possibilities?\", \"Is there any additional information you would like to share with the leadership team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
+                "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Replaced Value1\",{\"Start time\", \"Completion time\", \"ID\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\"})",
+                "in",
+                "    #\"Removed Columns2\""
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
               ],
               "type": "m"
             }
@@ -938,10 +978,24 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
           }
         ],
         "columns": [
           {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
             "name": "ID",
             "annotations": [
               {
@@ -996,6 +1050,11 @@
             "summarizeBy": "none"
           },
           {
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
             "name": "HIPster's Level of Need (LON)",
             "annotations": [
               {
@@ -1068,6 +1127,10 @@
             "summarizeBy": "none"
           },
           {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
             "name": "AM or PM HIPster",
             "annotations": [
               {
@@ -1086,6 +1149,11 @@
             "summarizeBy": "none"
           },
           {
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
             "name": "How many days per week do you attend MP?",
             "annotations": [
               {
@@ -1444,16 +1512,42 @@
             "source": {
               "expression": [
                 "let",
+<<<<<<< Updated upstream
                 "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\LifeLongLearning\\Lifelong Learning HIPster Survey(1-197).xlsx\"), null, true),",
+=======
+<<<<<<< HEAD
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\LifeLongLearning\\Lifelong Learning HIPster Survey(1-197).xlsx\"), null, true),",
+=======
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\mlikh\\OneDrive\\Документы\\GitHub\\UTDMyPossibilities\\Sources\\LifeLongLearning\\Lifelong Learning HIPster Survey(1-197).xlsx\"), null, true),",
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
                 "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Level of Need (LON)\", type text}, {\"HIPster's Name\", type text}, {\"Gender:\", type text}, {\"Program Length\", type text}, {\"AM or PM HIPster\", type text}, {\"How many days per week do you attend MP?\", type text}, {\"Do you like being a HIPster at MP?\", type text}, {\"Is MP the place you want to be?\", type text}, {\"Have you learned something new at MP?\", type text}, {\"Do your instructors show care for you?\", type text}, {\"Have you made friends with other HIPsters?\", type text}, {\"Do you pick your own classes?\", type text}, {\"Do you share what you know?\", type text}, {\"Do you keep trying even when things are hard to do?\", type text}, {\"Do you learn to make good choices at MP?\", type text}, {\"Are you excited about your future?\", type text}, {\"What I like most about being a HIPster:\", type text}}),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Email\", \"Name\", \"Last modified time\"}),",
                 "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Columns\"),",
                 "    #\"Replaced Value\" = Table.ReplaceValue(#\"Removed Duplicates\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Level of Need (LON)\", \"HIPster's Name\", \"Gender:\", \"Program Length\", \"AM or PM HIPster\", \"How many days per week do you attend MP?\", \"Do you like being a HIPster at MP?\", \"Is MP the place you want to be?\", \"Have you learned something new at MP?\", \"Do your instructors show care for you?\", \"Have you made friends with other HIPsters?\", \"Do you pick your own classes?\", \"Do you share what you know?\", \"Do you keep trying even when things are hard to do?\", \"Do you learn to make good choices at MP?\", \"Are you excited about your future?\", \"What I like most about being a HIPster:\"}),",
                 "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Level of Need (LON)\", \"HIPster's Name\", \"Gender:\", \"Program Length\", \"AM or PM HIPster\", \"How many days per week do you attend MP?\", \"Do you like being a HIPster at MP?\", \"Is MP the place you want to be?\", \"Have you learned something new at MP?\", \"Do your instructors show care for you?\", \"Have you made friends with other HIPsters?\", \"Do you pick your own classes?\", \"Do you share what you know?\", \"Do you keep trying even when things are hard to do?\", \"Do you learn to make good choices at MP?\", \"Are you excited about your future?\", \"What I like most about being a HIPster:\"}),",
+<<<<<<< Updated upstream
                 "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Level of Need (LON)\", \"HIPster's Name\", \"Gender:\", \"Program Length\", \"AM or PM HIPster\", \"How many days per week do you attend MP?\", \"Do you like being a HIPster at MP?\", \"Is MP the place you want to be?\", \"Have you learned something new at MP?\", \"Do your instructors show care for you?\", \"Have you made friends with other HIPsters?\", \"Do you pick your own classes?\", \"Do you share what you know?\", \"Do you keep trying even when things are hard to do?\", \"Do you learn to make good choices at MP?\", \"Are you excited about your future?\", \"What I like most about being a HIPster:\"})",
                 "in",
                 "    #\"Replaced Value2\""
+=======
+<<<<<<< HEAD
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Level of Need (LON)\", \"HIPster's Name\", \"Gender:\", \"Program Length\", \"AM or PM HIPster\", \"How many days per week do you attend MP?\", \"Do you like being a HIPster at MP?\", \"Is MP the place you want to be?\", \"Have you learned something new at MP?\", \"Do your instructors show care for you?\", \"Have you made friends with other HIPsters?\", \"Do you pick your own classes?\", \"Do you share what you know?\", \"Do you keep trying even when things are hard to do?\", \"Do you learn to make good choices at MP?\", \"Are you excited about your future?\", \"What I like most about being a HIPster:\"})",
+                "in",
+                "    #\"Replaced Value2\""
+=======
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Level of Need (LON)\", \"HIPster's Name\", \"Gender:\", \"Program Length\", \"AM or PM HIPster\", \"How many days per week do you attend MP?\", \"Do you like being a HIPster at MP?\", \"Is MP the place you want to be?\", \"Have you learned something new at MP?\", \"Do your instructors show care for you?\", \"Have you made friends with other HIPsters?\", \"Do you pick your own classes?\", \"Do you share what you know?\", \"Do you keep trying even when things are hard to do?\", \"Do you learn to make good choices at MP?\", \"Are you excited about your future?\", \"What I like most about being a HIPster:\"}),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Replaced Value2\",{\"Start time\", \"Completion time\", \"AM or PM HIPster\"}),",
+                "    #\"Replaced Value3\" = Table.ReplaceValue(#\"Removed Columns1\",\"Yes with Jamie she is best coach teacher. I wish all teachers would be like Jamie\",\"Yes\",Replacer.ReplaceText,{\"Is MP the place you want to be?\"}),",
+                "    #\"Replaced Value4\" = Table.ReplaceValue(#\"Replaced Value3\",\"Yes to many people in hallways and to load in lunch room. I like quiet lunch. \",\"Yes\",Replacer.ReplaceText,{\"Have you learned something new at MP?\"}),",
+                "    #\"Replaced Value5\" = Table.ReplaceValue(#\"Replaced Value4\",\"Sometimes my teacher leaves us alone. I don’t like this.\",null,Replacer.ReplaceValue,{\"Do your instructors show care for you?\"}),",
+                "    #\"Replaced Value6\" = Table.ReplaceValue(#\"Replaced Value5\",\"None\",null,Replacer.ReplaceValue,{\"Gender:\"}),",
+                "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Replaced Value6\",{\"ID\"})",
+                "in",
+                "    #\"Removed Columns2\""
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
               ],
               "type": "m"
             }
@@ -1470,6 +1564,7 @@
         ],
         "columns": [
           {
+<<<<<<< HEAD
             "name": "ID",
             "annotations": [
               {
@@ -1548,6 +1643,11 @@
             "summarizeBy": "none"
           },
           {
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
             "name": "HIPster name",
             "annotations": [
               {
@@ -1725,10 +1825,25 @@
             "source": {
               "expression": [
                 "let",
+<<<<<<< Updated upstream
                 "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\Clinical\\Clinical Services HIPster Survey (1-104).xlsx\"), null, true),",
                 "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster name\", type text}, {\"Gender: \", type text}, {\"Which therapy do you attend? (check all that apply)\", type text}, {\"Do you like therapy at MP?\", type text}, {\"Did you choose what you're working on in therapy?\", type text}, {\"Does your therapist help you learn new skills?\", type text}, {\"Do you use new skills outside of MP (at home, work, or in the community)?\", type text}, {\"Have you learned to share your wants and needs?\", type text}, {\"Have you learned how to communicate with your friends and family?\", type text}, {\"Have you learned how to manage your emotions?\", type text}, {\"Have you learned how to ask for help when needed?\", type text}, {\"What skill have you learned in therapy that has helped you the most?\", type text}, {\"What other skills would you like to learn in therapy?\", type text}}),",
                 "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster name\", \"Gender: \", \"Which therapy do you attend? (check all that apply)\", \"Do you like therapy at MP?\", \"Did you choose what you're working on in therapy?\", \"Does your therapist help you learn new skills?\", \"Do you use new skills outside of MP (at home, work, or in the community)?\", \"Have you learned to share your wants and needs?\", \"Have you learned how to communicate with your friends and family?\", \"Have you learned how to manage your emotions?\", \"Have you learned how to ask for help when needed?\", \"What skill have you learned in therapy that has helped you the most?\", \"What other skills would you like to learn in therapy?\"})",
+=======
+<<<<<<< HEAD
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\Clinical\\Clinical Services HIPster Survey (1-104).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster name\", type text}, {\"Gender: \", type text}, {\"Which therapy do you attend? (check all that apply)\", type text}, {\"Do you like therapy at MP?\", type text}, {\"Did you choose what you're working on in therapy?\", type text}, {\"Does your therapist help you learn new skills?\", type text}, {\"Do you use new skills outside of MP (at home, work, or in the community)?\", type text}, {\"Have you learned to share your wants and needs?\", type text}, {\"Have you learned how to communicate with your friends and family?\", type text}, {\"Have you learned how to manage your emotions?\", type text}, {\"Have you learned how to ask for help when needed?\", type text}, {\"What skill have you learned in therapy that has helped you the most?\", type text}, {\"What other skills would you like to learn in therapy?\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster name\", \"Gender: \", \"Which therapy do you attend? (check all that apply)\", \"Do you like therapy at MP?\", \"Did you choose what you're working on in therapy?\", \"Does your therapist help you learn new skills?\", \"Do you use new skills outside of MP (at home, work, or in the community)?\", \"Have you learned to share your wants and needs?\", \"Have you learned how to communicate with your friends and family?\", \"Have you learned how to manage your emotions?\", \"Have you learned how to ask for help when needed?\", \"What skill have you learned in therapy that has helped you the most?\", \"What other skills would you like to learn in therapy?\"})",
+=======
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\mlikh\\OneDrive\\Документы\\GitHub\\UTDMyPossibilities\\Sources\\Clinical\\Clinical Services HIPster Survey (1-104).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster name\", type text}, {\"Gender: \", type text}, {\"Which therapy do you attend? (check all that apply)\", type text}, {\"Do you like therapy at MP?\", type text}, {\"Did you choose what you're working on in therapy?\", type text}, {\"Does your therapist help you learn new skills?\", type text}, {\"Do you use new skills outside of MP (at home, work, or in the community)?\", type text}, {\"Have you learned to share your wants and needs?\", type text}, {\"Have you learned how to communicate with your friends and family?\", type text}, {\"Have you learned how to manage your emotions?\", type text}, {\"Have you learned how to ask for help when needed?\", type text}, {\"What skill have you learned in therapy that has helped you the most?\", type text}, {\"What other skills would you like to learn in therapy?\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster name\", \"Gender: \", \"Which therapy do you attend? (check all that apply)\", \"Do you like therapy at MP?\", \"Did you choose what you're working on in therapy?\", \"Does your therapist help you learn new skills?\", \"Do you use new skills outside of MP (at home, work, or in the community)?\", \"Have you learned to share your wants and needs?\", \"Have you learned how to communicate with your friends and family?\", \"Have you learned how to manage your emotions?\", \"Have you learned how to ask for help when needed?\", \"What skill have you learned in therapy that has helped you the most?\", \"What other skills would you like to learn in therapy?\"}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Replaced Value\",{\"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"ID\"})",
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
                 "in",
                 "    #\"Replaced Value\""
               ],
@@ -1743,10 +1858,15 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
           {
+<<<<<<< HEAD
             "name": "ID",
             "annotations": [
               {
@@ -1825,6 +1945,11 @@
             "summarizeBy": "none"
           },
           {
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
             "name": "My HIPster's Gender:",
             "annotations": [
               {
@@ -1929,6 +2054,7 @@
             "summarizeBy": "none"
           },
           {
+<<<<<<< HEAD
             "name": "I would like to see additional therapy services added to the program.",
             "annotations": [
               {
@@ -1942,6 +2068,8 @@
             "summarizeBy": "none"
           },
           {
+=======
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
             "name": "Therapy staff is flexible and adapts to accommodate HIPsters' needs.",
             "annotations": [
               {
@@ -2041,6 +2169,7 @@
             "source": {
               "expression": [
                 "let",
+<<<<<<< Updated upstream
                 "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\Clinical\\Clinical ServicesCaregiver Survey(1-43).xlsx\"), null, true),",
                 "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"My HIPster's Gender:\", type text}, {\"Type of Therapy Received (may select more than one):\", type text}, {\"I am satisfied with the therapy services at MP.\", type text}, {\"My HIPster's daily living skills have improved since starting therapy at MP.\", type text}, {\"My HIPster's social skills have improved since starting therapy at MP.\", type text}, {\"My HIPster's communication skills have improved since starting therapy at MP.\", type text}, {\"My HIPster is more independent since starting therapy services at MP.\", type text}, {\"The therapy program is addressing the specific needs of my HIPster.\", type text}, {\"I would like to see additional therapy services added to the program.\", type text}, {\"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", type text}, {\"Therapy staff communicates effectively regarding therapy goals and schedules.\", type text}, {\"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", type text}, {\"Is there anything you would like to share with the Clinical Services Department?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}}),",
@@ -2048,6 +2177,26 @@
                 "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"My HIPster's Gender:\", \"Type of Therapy Received (may select more than one):\", \"I am satisfied with the therapy services at MP.\", \"My HIPster's daily living skills have improved since starting therapy at MP.\", \"My HIPster's social skills have improved since starting therapy at MP.\", \"My HIPster's communication skills have improved since starting therapy at MP.\", \"My HIPster is more independent since starting therapy services at MP.\", \"The therapy program is addressing the specific needs of my HIPster.\", \"I would like to see additional therapy services added to the program.\", \"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", \"Therapy staff communicates effectively regarding therapy goals and schedules.\", \"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", \"Is there anything you would like to share with the Clinical Services Department?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"})",
                 "in",
                 "    #\"Replaced Value1\""
+=======
+<<<<<<< HEAD
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\Clinical\\Clinical ServicesCaregiver Survey(1-43).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"My HIPster's Gender:\", type text}, {\"Type of Therapy Received (may select more than one):\", type text}, {\"I am satisfied with the therapy services at MP.\", type text}, {\"My HIPster's daily living skills have improved since starting therapy at MP.\", type text}, {\"My HIPster's social skills have improved since starting therapy at MP.\", type text}, {\"My HIPster's communication skills have improved since starting therapy at MP.\", type text}, {\"My HIPster is more independent since starting therapy services at MP.\", type text}, {\"The therapy program is addressing the specific needs of my HIPster.\", type text}, {\"I would like to see additional therapy services added to the program.\", type text}, {\"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", type text}, {\"Therapy staff communicates effectively regarding therapy goals and schedules.\", type text}, {\"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", type text}, {\"Is there anything you would like to share with the Clinical Services Department?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"My HIPster's Gender:\", \"Type of Therapy Received (may select more than one):\", \"I am satisfied with the therapy services at MP.\", \"My HIPster's daily living skills have improved since starting therapy at MP.\", \"My HIPster's social skills have improved since starting therapy at MP.\", \"My HIPster's communication skills have improved since starting therapy at MP.\", \"My HIPster is more independent since starting therapy services at MP.\", \"The therapy program is addressing the specific needs of my HIPster.\", \"I would like to see additional therapy services added to the program.\", \"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", \"Therapy staff communicates effectively regarding therapy goals and schedules.\", \"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", \"Is there anything you would like to share with the Clinical Services Department?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"My HIPster's Gender:\", \"Type of Therapy Received (may select more than one):\", \"I am satisfied with the therapy services at MP.\", \"My HIPster's daily living skills have improved since starting therapy at MP.\", \"My HIPster's social skills have improved since starting therapy at MP.\", \"My HIPster's communication skills have improved since starting therapy at MP.\", \"My HIPster is more independent since starting therapy services at MP.\", \"The therapy program is addressing the specific needs of my HIPster.\", \"I would like to see additional therapy services added to the program.\", \"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", \"Therapy staff communicates effectively regarding therapy goals and schedules.\", \"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", \"Is there anything you would like to share with the Clinical Services Department?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"})",
+                "in",
+                "    #\"Replaced Value1\""
+=======
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\mlikh\\OneDrive\\Документы\\GitHub\\UTDMyPossibilities\\Sources\\Clinical\\Clinical ServicesCaregiver Survey(1-43).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"My HIPster's Gender:\", type text}, {\"Type of Therapy Received (may select more than one):\", type text}, {\"I am satisfied with the therapy services at MP.\", type text}, {\"My HIPster's daily living skills have improved since starting therapy at MP.\", type text}, {\"My HIPster's social skills have improved since starting therapy at MP.\", type text}, {\"My HIPster's communication skills have improved since starting therapy at MP.\", type text}, {\"My HIPster is more independent since starting therapy services at MP.\", type text}, {\"The therapy program is addressing the specific needs of my HIPster.\", type text}, {\"I would like to see additional therapy services added to the program.\", type text}, {\"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", type text}, {\"Therapy staff communicates effectively regarding therapy goals and schedules.\", type text}, {\"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", type text}, {\"Is there anything you would like to share with the Clinical Services Department?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"My HIPster's Gender:\", \"Type of Therapy Received (may select more than one):\", \"I am satisfied with the therapy services at MP.\", \"My HIPster's daily living skills have improved since starting therapy at MP.\", \"My HIPster's social skills have improved since starting therapy at MP.\", \"My HIPster's communication skills have improved since starting therapy at MP.\", \"My HIPster is more independent since starting therapy services at MP.\", \"The therapy program is addressing the specific needs of my HIPster.\", \"I would like to see additional therapy services added to the program.\", \"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", \"Therapy staff communicates effectively regarding therapy goals and schedules.\", \"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", \"Is there anything you would like to share with the Clinical Services Department?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"My HIPster's Gender:\", \"Type of Therapy Received (may select more than one):\", \"I am satisfied with the therapy services at MP.\", \"My HIPster's daily living skills have improved since starting therapy at MP.\", \"My HIPster's social skills have improved since starting therapy at MP.\", \"My HIPster's communication skills have improved since starting therapy at MP.\", \"My HIPster is more independent since starting therapy services at MP.\", \"The therapy program is addressing the specific needs of my HIPster.\", \"I would like to see additional therapy services added to the program.\", \"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", \"Therapy staff communicates effectively regarding therapy goals and schedules.\", \"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", \"Is there anything you would like to share with the Clinical Services Department?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Replaced Value1\",{\"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"I would like to see additional therapy services added to the program.\", \"ID\"})",
+                "in",
+                "    #\"Removed Columns\""
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
               ],
               "type": "m"
             }
@@ -2060,10 +2209,15 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
           {
+<<<<<<< HEAD
             "name": "ID",
             "annotations": [
               {
@@ -2142,6 +2296,11 @@
             "summarizeBy": "none"
           },
           {
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
+>>>>>>> Stashed changes
             "name": "HIPster's Name",
             "annotations": [
               {
@@ -2345,10 +2504,664 @@
             "source": {
               "expression": [
                 "let",
+<<<<<<< Updated upstream
                 "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\Online\\Online HIPster Survey(1-14).xlsx\"), null, true),",
                 "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Name\", type text}, {\"Gender:\", type text}, {\"How do you attend My Possibilities?\", type text}, {\"How many days per week do you attend MP Online?\", Int64.Type}, {\"Do you like being a HIPster at MP?\", type text}, {\"Is MP Online the place you want to be?\", type text}, {\"Have you learned something new at MP Online?\", type text}, {\"Does your instructor care about you?\", type text}, {\"Have you made friends with other HIPsters?\", type text}, {\"Do you pick your own classes?\", type text}, {\"Can you share what you know with your class?\", type text}, {\"Do you keep trying even when things are hard to do?\", type text}, {\"Does MP Online help you learn to make good choices?\", type text}, {\"Are you excited about your future?\", type text}, {\"What do you like best about being a HIPster:\", type text}}),",
                 "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster's Name\", \"Gender:\", \"How do you attend My Possibilities?\", \"How many days per week do you attend MP Online?\", \"Do you like being a HIPster at MP?\", \"Is MP Online the place you want to be?\", \"Have you learned something new at MP Online?\", \"Does your instructor care about you?\", \"Have you made friends with other HIPsters?\", \"Do you pick your own classes?\", \"Can you share what you know with your class?\", \"Do you keep trying even when things are hard to do?\", \"Does MP Online help you learn to make good choices?\", \"Are you excited about your future?\", \"What do you like best about being a HIPster:\"})",
+=======
+<<<<<<< HEAD
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\Online\\Online HIPster Survey(1-14).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Name\", type text}, {\"Gender:\", type text}, {\"How do you attend My Possibilities?\", type text}, {\"How many days per week do you attend MP Online?\", Int64.Type}, {\"Do you like being a HIPster at MP?\", type text}, {\"Is MP Online the place you want to be?\", type text}, {\"Have you learned something new at MP Online?\", type text}, {\"Does your instructor care about you?\", type text}, {\"Have you made friends with other HIPsters?\", type text}, {\"Do you pick your own classes?\", type text}, {\"Can you share what you know with your class?\", type text}, {\"Do you keep trying even when things are hard to do?\", type text}, {\"Does MP Online help you learn to make good choices?\", type text}, {\"Are you excited about your future?\", type text}, {\"What do you like best about being a HIPster:\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster's Name\", \"Gender:\", \"How do you attend My Possibilities?\", \"How many days per week do you attend MP Online?\", \"Do you like being a HIPster at MP?\", \"Is MP Online the place you want to be?\", \"Have you learned something new at MP Online?\", \"Does your instructor care about you?\", \"Have you made friends with other HIPsters?\", \"Do you pick your own classes?\", \"Can you share what you know with your class?\", \"Do you keep trying even when things are hard to do?\", \"Does MP Online help you learn to make good choices?\", \"Are you excited about your future?\", \"What do you like best about being a HIPster:\"})",
+=======
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\mlikh\\OneDrive\\Документы\\GitHub\\UTDMyPossibilities\\Sources\\Online\\Online HIPster Survey(1-14).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Name\", type text}, {\"Gender:\", type text}, {\"How do you attend My Possibilities?\", type text}, {\"How many days per week do you attend MP Online?\", Int64.Type}, {\"Do you like being a HIPster at MP?\", type text}, {\"Is MP Online the place you want to be?\", type text}, {\"Have you learned something new at MP Online?\", type text}, {\"Does your instructor care about you?\", type text}, {\"Have you made friends with other HIPsters?\", type text}, {\"Do you pick your own classes?\", type text}, {\"Can you share what you know with your class?\", type text}, {\"Do you keep trying even when things are hard to do?\", type text}, {\"Does MP Online help you learn to make good choices?\", type text}, {\"Are you excited about your future?\", type text}, {\"What do you like best about being a HIPster:\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster's Name\", \"Gender:\", \"How do you attend My Possibilities?\", \"How many days per week do you attend MP Online?\", \"Do you like being a HIPster at MP?\", \"Is MP Online the place you want to be?\", \"Have you learned something new at MP Online?\", \"Does your instructor care about you?\", \"Have you made friends with other HIPsters?\", \"Do you pick your own classes?\", \"Can you share what you know with your class?\", \"Do you keep trying even when things are hard to do?\", \"Does MP Online help you learn to make good choices?\", \"Are you excited about your future?\", \"What do you like best about being a HIPster:\"}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Replaced Value\",{\"Email\", \"Name\", \"Last modified time\", \"ID\", \"Start time\", \"Completion time\"})",
+>>>>>>> Stashed changes
+                "in",
+                "    #\"Replaced Value\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Online_Caregiver",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2e67faef-1285-450f-a1ee-71aa4792c384",
+            "sourceColumn": "ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Start time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "55bf8ba6-861a-4cf1-8783-9565f5446488",
+            "sourceColumn": "Start time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Completion time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "94cc9701-9560-4117-8cef-c00bf304b5d8",
+            "sourceColumn": "Completion time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Email",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b9e0e508-67ac-42ff-b926-28143bdf98aa",
+            "sourceColumn": "Email",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "058af57a-ab1f-4f93-8d02-3c8e7e748b62",
+            "sourceColumn": "Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Last modified time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4f5ef777-e1d6-483d-855d-7d6c388dae45",
+            "sourceColumn": "Last modified time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "HIPster's Medicaid Waiver Assigned Level of Need (LON):",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c8380228-0ec1-483d-bd9d-38fc23a16e68",
+            "sourceColumn": "HIPster's Medicaid Waiver Assigned Level of Need (LON):",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "HIPster's Gender:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "72b1760b-dfba-4087-81f5-d7c1d766aa01",
+            "sourceColumn": "HIPster's Gender:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Number of Days a Week HIPster attends MP Online Classes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2a61206c-526a-49de-a7cc-54fe50f5f24c",
+            "sourceColumn": "Number of Days a Week HIPster attends MP Online Classes",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "What year did your HIPster begin MP Online?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3969da0a-2945-4f41-bb46-d11828a9a96e",
+            "sourceColumn": "What year did your HIPster begin MP Online?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online meet the needs of my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "88149e70-4949-4429-8f04-57a1410a9ed4",
+            "sourceColumn": "MP Online meet the needs of my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online provides a safe and supportive environment for my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1abb00c7-7b16-4261-8420-69564903567e",
+            "sourceColumn": "MP Online provides a safe and supportive environment for my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online promote socialization, skill-building, and personal growth.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bb08f1ef-995d-4b3b-ba9d-914c2a8e30f3",
+            "sourceColumn": "MP Online promote socialization, skill-building, and personal growth.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6337850d-5643-48df-8cae-2f8daded09c1",
+            "sourceColumn": "MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online structure and routine work well for my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "55d5a8b7-7e00-442e-988a-478ed2799c99",
+            "sourceColumn": "The MP Online structure and routine work well for my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online staff addresses the individual needs of my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c0827b60-d74c-4ff0-bdb9-911546bfc283",
+            "sourceColumn": "The MP Online staff addresses the individual needs of my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online program is flexible and accommodates my HIPsters's needs.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0b33bd50-3b3c-4974-9841-0b9aa3c78753",
+            "sourceColumn": "The MP Online program is flexible and accommodates my HIPsters's needs.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b5ae5d50-524e-4053-a3ba-f4f89cef51e2",
+            "sourceColumn": "The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Transportation is a challenge for my HIPster to attend MP in person",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "01ea7b00-2c0b-44f5-90b4-780ba92ca199",
+            "sourceColumn": "Transportation is a challenge for my HIPster to attend MP in person",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The cost of the program limits how often my HIPster can attend.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dc74e322-3fe7-41bf-b5b9-da17560a95ae",
+            "sourceColumn": "The cost of the program limits how often my HIPster can attend.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8d5da763-fe4c-493e-abe0-66086d79f795",
+            "sourceColumn": "Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Is there anything you would like to share with the MP Leadership Team?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "444c2aa6-4e96-4dc3-bcb9-743dbdc8e0bf",
+            "sourceColumn": "Is there anything you would like to share with the MP Leadership Team?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) HIPster's name:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f926b806-98d3-4556-b2c0-667f175bd633",
+            "sourceColumn": "(Optional) HIPster's name:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) Your name:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d91377b4-0835-4ae3-a738-d3200dbac344",
+            "sourceColumn": "(Optional) Your name:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) Your email address:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ff2e9b89-ef2b-4b4a-93ad-08f7fa3871c3",
+            "sourceColumn": "(Optional) Your email address:",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "afad2b61-44e4-4c38-b8dd-f6517b605f65",
+        "partitions": [
+          {
+            "name": "Online_Caregiver",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\willi\\Documents\\GitHub\\UTDMyPossibilities\\Sources\\Online\\Online Caregiver Survey(1-12).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", type text}, {\"HIPster's Gender:\", type text}, {\"Number of Days a Week HIPster attends MP Online Classes\", Int64.Type}, {\"What year did your HIPster begin MP Online?\", Int64.Type}, {\"MP Online meet the needs of my HIPster.\", type text}, {\"MP Online provides a safe and supportive environment for my HIPster.\", type text}, {\"MP Online promote socialization, skill-building, and personal growth.\", type text}, {\"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", type text}, {\"The MP Online structure and routine work well for my HIPster.\", type text}, {\"The MP Online staff addresses the individual needs of my HIPster.\", type text}, {\"The MP Online program is flexible and accommodates my HIPsters's needs.\", type text}, {\"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", type text}, {\"Transportation is a challenge for my HIPster to attend MP in person\", type text}, {\"The cost of the program limits how often my HIPster can attend.\", type text}, {\"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", type text}, {\"Is there anything you would like to share with the MP Leadership Team?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"HIPster's Gender:\", \"Number of Days a Week HIPster attends MP Online Classes\", \"What year did your HIPster begin MP Online?\", \"MP Online meet the needs of my HIPster.\", \"MP Online provides a safe and supportive environment for my HIPster.\", \"MP Online promote socialization, skill-building, and personal growth.\", \"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", \"The MP Online structure and routine work well for my HIPster.\", \"The MP Online staff addresses the individual needs of my HIPster.\", \"The MP Online program is flexible and accommodates my HIPsters's needs.\", \"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Transportation is a challenge for my HIPster to attend MP in person\", \"The cost of the program limits how often my HIPster can attend.\", \"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", \"Is there anything you would like to share with the MP Leadership Team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"HIPster's Gender:\", \"Number of Days a Week HIPster attends MP Online Classes\", \"What year did your HIPster begin MP Online?\", \"MP Online meet the needs of my HIPster.\", \"MP Online provides a safe and supportive environment for my HIPster.\", \"MP Online promote socialization, skill-building, and personal growth.\", \"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", \"The MP Online structure and routine work well for my HIPster.\", \"The MP Online staff addresses the individual needs of my HIPster.\", \"The MP Online program is flexible and accommodates my HIPsters's needs.\", \"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Transportation is a challenge for my HIPster to attend MP in person\", \"The cost of the program limits how often my HIPster can attend.\", \"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", \"Is there anything you would like to share with the MP Leadership Team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"})",
+                "in",
+                "    #\"Replaced Value1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Online_Caregiver",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "HIPster's Medicaid Waiver Assigned Level of Need (LON):",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c8380228-0ec1-483d-bd9d-38fc23a16e68",
+            "sourceColumn": "HIPster's Medicaid Waiver Assigned Level of Need (LON):",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "HIPster's Gender:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "72b1760b-dfba-4087-81f5-d7c1d766aa01",
+            "sourceColumn": "HIPster's Gender:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Number of Days a Week HIPster attends MP Online Classes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2a61206c-526a-49de-a7cc-54fe50f5f24c",
+            "sourceColumn": "Number of Days a Week HIPster attends MP Online Classes",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "What year did your HIPster begin MP Online?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3969da0a-2945-4f41-bb46-d11828a9a96e",
+            "sourceColumn": "What year did your HIPster begin MP Online?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online meet the needs of my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "88149e70-4949-4429-8f04-57a1410a9ed4",
+            "sourceColumn": "MP Online meet the needs of my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online provides a safe and supportive environment for my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1abb00c7-7b16-4261-8420-69564903567e",
+            "sourceColumn": "MP Online provides a safe and supportive environment for my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online promote socialization, skill-building, and personal growth.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bb08f1ef-995d-4b3b-ba9d-914c2a8e30f3",
+            "sourceColumn": "MP Online promote socialization, skill-building, and personal growth.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6337850d-5643-48df-8cae-2f8daded09c1",
+            "sourceColumn": "MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online structure and routine work well for my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "55d5a8b7-7e00-442e-988a-478ed2799c99",
+            "sourceColumn": "The MP Online structure and routine work well for my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online staff addresses the individual needs of my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c0827b60-d74c-4ff0-bdb9-911546bfc283",
+            "sourceColumn": "The MP Online staff addresses the individual needs of my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online program is flexible and accommodates my HIPsters's needs.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0b33bd50-3b3c-4974-9841-0b9aa3c78753",
+            "sourceColumn": "The MP Online program is flexible and accommodates my HIPsters's needs.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b5ae5d50-524e-4053-a3ba-f4f89cef51e2",
+            "sourceColumn": "The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Transportation is a challenge for my HIPster to attend MP in person",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "01ea7b00-2c0b-44f5-90b4-780ba92ca199",
+            "sourceColumn": "Transportation is a challenge for my HIPster to attend MP in person",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "The cost of the program limits how often my HIPster can attend.",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dc74e322-3fe7-41bf-b5b9-da17560a95ae",
+            "sourceColumn": "The cost of the program limits how often my HIPster can attend.",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8d5da763-fe4c-493e-abe0-66086d79f795",
+            "sourceColumn": "Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Is there anything you would like to share with the MP Leadership Team?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "444c2aa6-4e96-4dc3-bcb9-743dbdc8e0bf",
+            "sourceColumn": "Is there anything you would like to share with the MP Leadership Team?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) HIPster's name:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f926b806-98d3-4556-b2c0-667f175bd633",
+            "sourceColumn": "(Optional) HIPster's name:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) Your name:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d91377b4-0835-4ae3-a738-d3200dbac344",
+            "sourceColumn": "(Optional) Your name:",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "(Optional) Your email address:",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ff2e9b89-ef2b-4b4a-93ad-08f7fa3871c3",
+            "sourceColumn": "(Optional) Your email address:",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "afad2b61-44e4-4c38-b8dd-f6517b605f65",
+        "partitions": [
+          {
+            "name": "Online_Caregiver",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\mlikh\\OneDrive\\Документы\\GitHub\\UTDMyPossibilities\\Sources\\Online\\Online Caregiver Survey(1-12).xlsx\"), null, true),",
+                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", type text}, {\"HIPster's Gender:\", type text}, {\"Number of Days a Week HIPster attends MP Online Classes\", Int64.Type}, {\"What year did your HIPster begin MP Online?\", Int64.Type}, {\"MP Online meet the needs of my HIPster.\", type text}, {\"MP Online provides a safe and supportive environment for my HIPster.\", type text}, {\"MP Online promote socialization, skill-building, and personal growth.\", type text}, {\"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", type text}, {\"The MP Online structure and routine work well for my HIPster.\", type text}, {\"The MP Online staff addresses the individual needs of my HIPster.\", type text}, {\"The MP Online program is flexible and accommodates my HIPsters's needs.\", type text}, {\"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", type text}, {\"Transportation is a challenge for my HIPster to attend MP in person\", type text}, {\"The cost of the program limits how often my HIPster can attend.\", type text}, {\"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", type text}, {\"Is there anything you would like to share with the MP Leadership Team?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"HIPster's Gender:\", \"Number of Days a Week HIPster attends MP Online Classes\", \"What year did your HIPster begin MP Online?\", \"MP Online meet the needs of my HIPster.\", \"MP Online provides a safe and supportive environment for my HIPster.\", \"MP Online promote socialization, skill-building, and personal growth.\", \"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", \"The MP Online structure and routine work well for my HIPster.\", \"The MP Online staff addresses the individual needs of my HIPster.\", \"The MP Online program is flexible and accommodates my HIPsters's needs.\", \"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Transportation is a challenge for my HIPster to attend MP in person\", \"The cost of the program limits how often my HIPster can attend.\", \"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", \"Is there anything you would like to share with the MP Leadership Team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"HIPster's Gender:\", \"Number of Days a Week HIPster attends MP Online Classes\", \"What year did your HIPster begin MP Online?\", \"MP Online meet the needs of my HIPster.\", \"MP Online provides a safe and supportive environment for my HIPster.\", \"MP Online promote socialization, skill-building, and personal growth.\", \"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", \"The MP Online structure and routine work well for my HIPster.\", \"The MP Online staff addresses the individual needs of my HIPster.\", \"The MP Online program is flexible and accommodates my HIPsters's needs.\", \"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Transportation is a challenge for my HIPster to attend MP in person\", \"The cost of the program limits how often my HIPster can attend.\", \"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", \"Is there anything you would like to share with the MP Leadership Team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Replaced Value1\",{\"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"ID\"})",
+>>>>>>> 785345e25f3366b0aec057d9de1bdd5ce6b7490c
                 "in",
                 "    #\"Replaced Value\""
               ],
