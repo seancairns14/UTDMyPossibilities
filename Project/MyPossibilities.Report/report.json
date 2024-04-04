@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "publicCustomVisuals": [
     "advanceCardE03760C5AB684758B56AA29F9E6C257B"
@@ -39,15 +39,6 @@
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"0fca57b71d0e5a9a95a0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":801.951219512195,\"y\":376.0975609756097,\"z\":3000,\"width\":207.8048780487805,\"height\":200.48780487804876,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"LLL_Hipster.I Keep Trying When Things are Hard\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I Keep Trying When Things are Hard\"},\"Name\":\"LLL_Hipster.I Keep Trying When Things are Hard\",\"NativeReferenceName\":\"I Keep Trying When Things are Hard\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I Keep Trying When Things are Hard\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 200.49,
-          "width": 207.80,
-          "x": 801.95,
-          "y": 376.10,
-          "z": 3000.00
-        },
-        {
           "config": "{\"name\":\"0fdde5bc6c80c2c74e42\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48.292682926829265,\"y\":42.4390243902439,\"z\":0,\"width\":1400,\"height\":1100,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 1100.00,
@@ -55,15 +46,6 @@
           "x": 48.29,
           "y": 42.44,
           "z": 0.00
-        },
-        {
-          "config": "{\"name\":\"d62ad9db0893986d4945\",\"layouts\":[{\"id\":0,\"position\":{\"x\":794.6341463414634,\"y\":163.90243902439025,\"z\":2000,\"width\":222.4390243902439,\"height\":196.09756097560975,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"LLL_Hipster.I'm Excited about My Future\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I'm Excited about My Future\"},\"Name\":\"LLL_Hipster.I'm Excited about My Future\",\"NativeReferenceName\":\"I'm Excited about My Future\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"I'm Excited about My Future\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
-          "filters": "[{\"name\":\"Filterf34e312b4cc6d2b4171c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LLL_Hipster\"}},\"Property\":\"Gender:\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"LLL_Hipster\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender:\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'None'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
-          "height": 196.10,
-          "width": 222.44,
-          "x": 794.63,
-          "y": 163.90,
-          "z": 2000.00
         }
       ],
       "width": 1500.00
@@ -85,15 +67,6 @@
           "x": 0.00,
           "y": 0.00,
           "z": 0.00
-        },
-        {
-          "config": "{\"name\":\"6d76c3099a82b4410e10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":51.724137931034484,\"y\":47.29064039408867,\"z\":1000,\"width\":178.8177339901478,\"height\":171.42857142857144,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Clinical_HIPster.Therapist Helps Me Learn New Skills\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Clinical_HIPster\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Therapist Helps Me Learn New Skills\"},\"Name\":\"Clinical_HIPster.Therapist Helps Me Learn New Skills\",\"NativeReferenceName\":\"Therapist Helps Me Learn New Skills\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Therapist Helps Me Learn New Skills\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 171.43,
-          "width": 178.82,
-          "x": 51.72,
-          "y": 47.29,
-          "z": 1000.00
         }
       ],
       "width": 1500.00
