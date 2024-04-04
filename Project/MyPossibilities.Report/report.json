@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "publicCustomVisuals": [
     "advanceCardE03760C5AB684758B56AA29F9E6C257B"
@@ -67,7 +67,17 @@
       "height": 720.00,
       "name": "ReportSection0733b75cb19794a57bb0",
       "ordinal": 1,
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"a88bcf2398105433364e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.289389067524116,\"y\":0,\"z\":0,\"width\":574.1479099678456,\"height\":374.5337620578778,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Clinical_Caregiver.Communication skills have improved since starting therapy at MP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Clinical_Caregiver\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Communication skills have improved since starting therapy at MP\"},\"Name\":\"Clinical_Caregiver.Communication skills have improved since starting therapy at MP\",\"NativeReferenceName\":\"Communication skills have improved since starting therapy at MP\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Communication skills have improved since starting therapy at MP\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 374.53,
+          "width": 574.15,
+          "x": 10.29,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
       "width": 1280.00
     },
     {
