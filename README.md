@@ -1,6 +1,18 @@
 # UTDMyPossibilities
 PowerBI MyPossibilities
 
+# Download Power BI
+There are different versions make sure you install the right one.
+https://www.microsoft.com/store/productId/9NTXR16HNW1T?ocid=pdpshare
+
+# Download Github Desktop
+https://desktop.github.com/
+
+# Instructions
+1. Clone Repository, and create own branch.
+2. Open in file explorer, open  MyPossibilities.pbix.
+3. Make changes, save file in powerbi, and commit and push to own branch.
+
 
 # Power BI Data Model Metadata and Relationships
 
