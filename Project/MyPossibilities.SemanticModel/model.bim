@@ -163,10 +163,7 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-<<<<<<< Updated upstream
             "isHidden": true,
-=======
->>>>>>> Stashed changes
             "isNameInferred": true,
             "lineageTag": "d4f1b9e6-68d6-4ad5-a260-8e2e3ec1ab1d",
             "sourceColumn": "[Date]",
@@ -188,10 +185,7 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-<<<<<<< Updated upstream
             "isHidden": true,
-=======
->>>>>>> Stashed changes
             "lineageTag": "8a29b581-d0fe-4cbc-968c-421ae2230490",
             "summarizeBy": "none",
             "type": "calculated"
@@ -211,10 +205,7 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-<<<<<<< Updated upstream
             "isHidden": true,
-=======
->>>>>>> Stashed changes
             "lineageTag": "2bf3ebe9-876d-4495-8ac4-57f8d4436166",
             "summarizeBy": "none",
             "type": "calculated"
@@ -234,10 +225,7 @@
             "dataCategory": "Months",
             "dataType": "string",
             "expression": "FORMAT([Date], \"MMMM\")",
-<<<<<<< Updated upstream
             "isHidden": true,
-=======
->>>>>>> Stashed changes
             "lineageTag": "95cbdb9b-7156-4c5b-a9ff-69ce92d57d32",
             "sortByColumn": "MonthNo",
             "summarizeBy": "none",
@@ -258,10 +246,7 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-<<<<<<< Updated upstream
             "isHidden": true,
-=======
->>>>>>> Stashed changes
             "lineageTag": "d9b05f9a-a936-4fc4-bade-c86871ff6b36",
             "summarizeBy": "none",
             "type": "calculated"
@@ -281,10 +266,7 @@
             "dataCategory": "Quarters",
             "dataType": "string",
             "expression": "\"Qtr \" & [QuarterNo]",
-<<<<<<< Updated upstream
             "isHidden": true,
-=======
->>>>>>> Stashed changes
             "lineageTag": "f8dff26e-da8d-40e9-a1cc-fe86a93b6626",
             "sortByColumn": "QuarterNo",
             "summarizeBy": "none",
@@ -305,10 +287,7 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-<<<<<<< Updated upstream
             "isHidden": true,
-=======
->>>>>>> Stashed changes
             "lineageTag": "beaafcb0-9050-4bed-9161-7b74de9ea322",
             "summarizeBy": "none",
             "type": "calculated"
@@ -371,7 +350,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-<<<<<<< Updated upstream
           }
         ],
         "columns": [
@@ -387,8 +365,6 @@
             "lineageTag": "f14aec73-d7bc-40ef-a837-bfb9b7c66dd4",
             "sourceColumn": "HIPster name",
             "summarizeBy": "none"
-=======
->>>>>>> Stashed changes
           },
           {
             "name": "Gender: ",
@@ -1379,1431 +1355,10 @@
           {
             "name": "PBI_NavigationStepName",
             "value": "Navigation"
-<<<<<<< Updated upstream
           },
           {
             "name": "PBI_ResultType",
             "value": "Exception"
-=======
-          }
-        ],
-        "columns": [
-          {
-            "name": "HIPster's Name",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "f14aec73-d7bc-40ef-a837-bfb9b7c66dd4",
-            "sourceColumn": "HIPster's Name",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "HIPster's Gender",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "8eb461fe-7b10-4b9f-a54c-6bda46349409",
-            "sourceColumn": "HIPster's Gender",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Type of Therapy Received",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "01b804e4-c3b3-43c2-b3e8-b0421fe3bc52",
-            "sourceColumn": "Type of Therapy Received",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Satisfaction with MP Therapy Services",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "d850aaba-dca3-4ebb-afd1-b240f1cc69c9",
-            "sourceColumn": "Satisfaction with MP Therapy Services",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Therapy Focus Choice",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "7a59935e-069b-4fde-9a8d-7270a9bca824",
-            "sourceColumn": "Therapy Focus Choice",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Therapist Helps Learn New Skills",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "7b44b29a-ca1b-4593-9998-a52ae3629e62",
-            "sourceColumn": "Therapist Helps Learn New Skills",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Uses Skills Outside MP",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "d92c76f8-c48a-40d0-a3ea-1d7d1d87854e",
-            "sourceColumn": "Uses Skills Outside MP",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Learned to Share Wants and Needs",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c241316b-b88b-4ce6-8cf0-5b2c4d787734",
-            "sourceColumn": "Learned to Share Wants and Needs",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Improvement in Communication Skills",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "6975bf8d-23dd-44f0-b0f6-bf0613ed548e",
-            "sourceColumn": "Improvement in Communication Skills",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Improvement in Emotional Management",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "6318132c-9cb2-4a82-b3cd-c4b1eea58a27",
-            "sourceColumn": "Improvement in Emotional Management",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Learned to Ask for Help",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "927512b1-97fd-4718-b066-9f81790df04b",
-            "sourceColumn": "Learned to Ask for Help",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Most Helpful Skill Learned",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "52d28cd3-270e-4216-b387-b092b4c2c7fd",
-            "sourceColumn": "Most Helpful Skill Learned",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Desired Skills to Learn",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "05902653-961a-4113-a984-60c87bfd2847",
-            "sourceColumn": "Desired Skills to Learn",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Source",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "4213d27a-2090-4992-b6bb-255f35e3f708",
-            "sourceColumn": "Source",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Type",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "64b877cf-e4b3-4ba8-b51e-094e320c01b4",
-            "sourceColumn": "Type",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "26e70a20-158d-4099-9229-a13d910c548f",
-        "measures": [
-          {
-            "name": "I Like Therapy at MP",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Satisfaction with MP Therapy Services] <> \"No\") / COUNTROWS(Clinical_HIPster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "75547881-14d7-4762-9585-8a14929260f1"
-          },
-          {
-            "name": "Therapist Helps Me Learn New Skills",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Therapist Helps Learn New Skills] <> \"No\") / COUNTROWS(Clinical_HIPster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "9caee195-2491-4f7a-b84b-7c105c20a0b2"
-          },
-          {
-            "name": "I Choose What I Work On In Therapy",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Therapy Focus Choice] <> \"No\") / COUNTROWS(Clinical_HIPster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "146cebdb-1fb3-40f7-a220-b32b8c36668e"
-          },
-          {
-            "name": "How to Ask For Help",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Learned to Ask for Help] <> \"No\") / COUNTROWS(Clinical_HIPster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "992eed9b-86e4-48f0-8f18-1e5f497cad6f"
-          },
-          {
-            "name": "How to Communicate with Family/Friends",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Improvement in Communication Skills] <> \"No\") / COUNTROWS(Clinical_HIPster))",
-            "lineageTag": "0dba0fad-39c5-4b71-b724-1b0ce28b5050"
-          },
-          {
-            "name": "How to Cope with Emotions",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Improvement in Emotional Management] <> \"No\") / COUNTROWS(Clinical_HIPster))",
-            "lineageTag": "776341fb-82cd-49f7-86b4-779e30fb9f2d"
-          },
-          {
-            "name": "How to Share Wants and Needs",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Learned to Share Wants and Needs] <> \"No\") / COUNTROWS(Clinical_HIPster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "0119197c-af28-49d3-8e1f-c80c653a230b"
-          },
-          {
-            "name": "Use Skills Outside of MP",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_HIPster), Clinical_HIPster[Uses Skills Outside MP] <> \"No\") / COUNTROWS(Clinical_HIPster))",
-            "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "449e6730-aa47-4f40-ba3a-c20e308f55ee"
-          }
-        ],
-        "partitions": [
-          {
-            "name": "Clinical_HIPster",
-            "mode": "import",
-            "queryGroup": "Clinical",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = Excel.Workbook(Web.Contents(\"https://github.com/seancairns14/UTDMyPossibilities/raw/William/Sources/Clinical/Clinical%20Services%20HIPster%20Survey%20(1-104).xlsx\"), null, true),",
-                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
-                "    #\"Renamed Columns1\" = Table.RenameColumns(Table1_Table,{{\"Gender: \", \"Gender:\"}}),",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns1\",{",
-                "        {\"ID\", Int64.Type}, ",
-                "        {\"Start time\", type datetime}, ",
-                "        {\"Completion time\", type datetime}, ",
-                "        {\"Email\", type text}, ",
-                "        {\"Name\", type any}, ",
-                "        {\"Last modified time\", type any}, ",
-                "        {\"HIPster name\", type text}, ",
-                "        {\"Gender:\", type text}, ",
-                "        {\"Which therapy do you attend? (check all that apply)\", type text}, ",
-                "        {\"Do you like therapy at MP?\", type text}, ",
-                "        {\"Did you choose what you're working on in therapy?\", type text}, ",
-                "        {\"Does your therapist help you learn new skills?\", type text}, ",
-                "        {\"Do you use new skills outside of MP (at home, work, or in the community)?\", type text}, ",
-                "        {\"Have you learned to share your wants and needs?\", type text}, ",
-                "        {\"Have you learned how to communicate with your friends and family?\", type text}, ",
-                "        {\"Have you learned how to manage your emotions?\", type text}, ",
-                "        {\"Have you learned how to ask for help when needed?\", type text}, ",
-                "        {\"What skill have you learned in therapy that has helped you the most?\", type text}, ",
-                "        {\"What other skills would you like to learn in therapy?\", type text}",
-                "    }),",
-                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{",
-                "        {\"Gender:\", \"HIPster's Gender\"},",
-                "        {\"HIPster name\", \"HIPster's Name\"},",
-                "        {\"Which therapy do you attend? (check all that apply)\", \"Type of Therapy Received\"},",
-                "        {\"Do you like therapy at MP?\", \"Satisfaction with MP Therapy Services\"},",
-                "        {\"Did you choose what you're working on in therapy?\", \"Therapy Focus Choice\"},",
-                "        {\"Does your therapist help you learn new skills?\", \"Therapist Helps Learn New Skills\"},",
-                "        {\"Do you use new skills outside of MP (at home, work, or in the community)?\", \"Uses Skills Outside MP\"},",
-                "        {\"Have you learned to share your wants and needs?\", \"Learned to Share Wants and Needs\"},",
-                "        {\"Have you learned how to communicate with your friends and family?\", \"Improvement in Communication Skills\"},",
-                "        {\"Have you learned how to manage your emotions?\", \"Improvement in Emotional Management\"},",
-                "        {\"Have you learned how to ask for help when needed?\", \"Learned to Ask for Help\"},",
-                "        {\"What skill have you learned in therapy that has helped you the most?\", \"Most Helpful Skill Learned\"},",
-                "        {\"What other skills would you like to learn in therapy?\", \"Desired Skills to Learn\"}",
-                "    }),",
-                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Renamed Columns\",{",
-                "        \"Start time\", ",
-                "        \"Completion time\", ",
-                "        \"Email\", ",
-                "        \"Name\", ",
-                "        \"Last modified time\", ",
-                "        \"ID\"",
-                "    }),",
-                "    #\"Added Custom\" = Table.AddColumn(#\"Removed Columns\", \"Source\", each \"Clinical\"),",
-                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Added Custom\",\"Sometimes\",\"Yes\",Replacer.ReplaceText,{\"HIPster's Name\", \"HIPster's Gender\", \"Type of Therapy Received\", \"Satisfaction with MP Therapy Services\", \"Therapy Focus Choice\", \"Therapist Helps Learn New Skills\", \"Uses Skills Outside MP\", \"Learned to Share Wants and Needs\", \"Improvement in Communication Skills\", \"Improvement in Emotional Management\", \"Learned to Ask for Help\", \"Most Helpful Skill Learned\", \"Desired Skills to Learn\"}),",
-                "    #\"Added Custom1\" = Table.AddColumn(#\"Replaced Value\", \"Type\", each \"HIPster\")",
-                "in",
-                "    #\"Added Custom1\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "Clinical_Caregiver",
-        "annotations": [
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          }
-        ],
-        "columns": [
-          {
-            "name": "HIPster's Gender:",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "94e95aaf-a002-433e-9799-1e6bf4874e08",
-            "sourceColumn": "HIPster's Gender:",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Therapy Types Received",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b2fef85d-9559-4fd6-82e3-f6c859bc8bb0",
-            "sourceColumn": "Therapy Types Received",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Satisfaction with MP Therapy Services",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "097f43a3-db33-48af-9e2f-dda8894e1ab8",
-            "sourceColumn": "Satisfaction with MP Therapy Services",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Improvement in Daily Living Skills",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1d54b198-bd15-4cba-8195-d873729b2146",
-            "sourceColumn": "Improvement in Daily Living Skills",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Improvement in Social Skills",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "5f2a83a1-fa60-44a5-b001-1543d97c83cf",
-            "sourceColumn": "Improvement in Social Skills",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Improvement in Communication Skills",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "49740d5c-1332-4332-9509-54fcfaccd2a9",
-            "sourceColumn": "Improvement in Communication Skills",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Increased Independence from Therapy",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "2796226a-9f56-436c-be9c-3f7c7defc8a1",
-            "sourceColumn": "Increased Independence from Therapy",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP programs meet the needs of my HIPster.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1e11b286-a010-40f6-bb98-6f171d64acb9",
-            "sourceColumn": "MP programs meet the needs of my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP staff is flexible and adapt to accommodate my HIPsters's needs.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "a5d1317e-f602-49f2-8055-4f438fcbc85a",
-            "sourceColumn": "MP staff is flexible and adapt to accommodate my HIPsters's needs.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Effective Communication by Therapy Staff",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "3537ac2a-80e4-4ed0-90e7-9e4c5f700bbf",
-            "sourceColumn": "Effective Communication by Therapy Staff",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "The cost of the program limits how often my HIPster can attend.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "26f3ab4d-3d0b-4b72-8421-3fe1389c00de",
-            "sourceColumn": "The cost of the program limits how often my HIPster can attend.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Feedback for Clinical Services Department",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "677f37bc-60fd-420f-b679-5aa584f369af",
-            "sourceColumn": "Feedback for Clinical Services Department",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "(Optional) HIPster's name:",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "42072c7a-6a6b-4831-af2d-86492ac7d1d7",
-            "sourceColumn": "(Optional) HIPster's name:",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "(Optional) Your name:",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "f04b9f43-b018-4d4e-8ace-1ffd3b4e422c",
-            "sourceColumn": "(Optional) Your name:",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "(Optional) Your email address:",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1e625170-c928-4a8e-b6c1-58ed85272cf2",
-            "sourceColumn": "(Optional) Your email address:",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Source",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "5482c537-63e0-48b1-8212-ce0727c95902",
-            "sourceColumn": "Source",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Type",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "97a90525-1337-40e2-b456-06dbaa352b0b",
-            "sourceColumn": "Type",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "a2a817c7-2c90-4313-a7df-e6ac3fc500a9",
-        "measures": [
-          {
-            "name": "Satisfied with the therapy services at MP",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_Caregiver), Clinical_Caregiver[Satisfaction with MP Therapy Services] = \"Agree\") / COUNTROWS(Clinical_Caregiver))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "0be4982b-c4a9-4d9f-84a8-3b1ed9817315"
-          },
-          {
-            "name": "Staff is flexible and adapts to accommodate HIPsters' needs",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_Caregiver), Clinical_Caregiver[MP staff is flexible and adapt to accommodate my HIPsters's needs.] = \"Agree\") / COUNTROWS(Clinical_Caregiver))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "0c1aee7b-540b-46f9-baeb-d3c33d391e9a"
-          },
-          {
-            "name": "Staff communicates effectively regarding therapy goals and schedules",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_Caregiver), Clinical_Caregiver[Effective Communication by Therapy Staff] = \"Agree\") / COUNTROWS(Clinical_Caregiver))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "1ac8293c-742c-475d-b4ea-c6fc52324188"
-          },
-          {
-            "name": "The therapy program addresses the specific needs of my HIPster",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_Caregiver), Clinical_Caregiver[MP programs meet the needs of my HIPster.] = \"Agree\") / COUNTROWS(Clinical_Caregiver))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "c79e0d18-f6c6-42e0-8a01-4188d76ee2fc"
-          },
-          {
-            "name": "Social skills have improved since starting therapy at MP",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(Clinical_Caregiver), Clinical_Caregiver[Improvement in Social Skills] = \"Agree\") / COUNTROWS(Clinical_Caregiver))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "26c09672-8e23-411f-952b-fcfc7805897b"
-          }
-        ],
-        "partitions": [
-          {
-            "name": "Clinical_Caregiver",
-            "mode": "import",
-            "queryGroup": "Clinical",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = Excel.Workbook(Web.Contents(\"https://github.com/seancairns14/UTDMyPossibilities/raw/William/Sources/Clinical/Clinical%20ServicesCaregiver%C2%A0Survey(1-43).xlsx\"), null, true),",
-                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{",
-                "        {\"ID\", Int64.Type}, ",
-                "        {\"Start time\", type datetime}, ",
-                "        {\"Completion time\", type datetime}, ",
-                "        {\"Email\", type text}, ",
-                "        {\"Name\", type any}, ",
-                "        {\"Last modified time\", type any}, ",
-                "        {\"My HIPster's Gender:\", type text}, ",
-                "        {\"Type of Therapy Received (may select more than one):\", type text}, ",
-                "        {\"I am satisfied with the therapy services at MP.\", type text}, ",
-                "        {\"My HIPster's daily living skills have improved since starting therapy at MP.\", type text}, ",
-                "        {\"My HIPster's social skills have improved since starting therapy at MP.\", type text}, ",
-                "        {\"My HIPster's communication skills have improved since starting therapy at MP.\", type text}, ",
-                "        {\"My HIPster is more independent since starting therapy services at MP.\", type text}, ",
-                "        {\"The therapy program is addressing the specific needs of my HIPster.\", type text}, ",
-                "        {\"I would like to see additional therapy services added to the program.\", type text}, ",
-                "        {\"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", type text}, ",
-                "        {\"Therapy staff communicates effectively regarding therapy goals and schedules.\", type text}, ",
-                "        {\"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", type text}, ",
-                "        {\"Is there anything you would like to share with the Clinical Services Department?\", type text}, ",
-                "        {\"(Optional) HIPster's name:\", type text}, ",
-                "        {\"(Optional) Your name:\", type text}, ",
-                "        {\"(Optional) Your email address:\", type text}",
-                "    }),",
-                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{",
-                "        {\"My HIPster's Gender:\", \"HIPster's Gender:\"},",
-                "        {\"Type of Therapy Received (may select more than one):\", \"Therapy Types Received\"},",
-                "        {\"I am satisfied with the therapy services at MP.\", \"Satisfaction with MP Therapy Services\"},",
-                "        {\"My HIPster's daily living skills have improved since starting therapy at MP.\", \"Improvement in Daily Living Skills\"},",
-                "        {\"My HIPster's social skills have improved since starting therapy at MP.\", \"Improvement in Social Skills\"},",
-                "        {\"My HIPster's communication skills have improved since starting therapy at MP.\", \"Improvement in Communication Skills\"},",
-                "        {\"My HIPster is more independent since starting therapy services at MP.\", \"Increased Independence from Therapy\"},",
-                "        {\"The therapy program is addressing the specific needs of my HIPster.\", \"MP programs meet the needs of my HIPster.\"},",
-                "        {\"Therapy staff is flexible and adapts to accommodate HIPsters' needs.\", \"MP staff is flexible and adapt to accommodate my HIPsters's needs.\"},",
-                "        {\"Therapy staff communicates effectively regarding therapy goals and schedules.\", \"Effective Communication by Therapy Staff\"},",
-                "        {\"The cost of the therapy program is prohibitive, so my HIPster is not receiving as much therapy as they need.\", \"The cost of the program limits how often my HIPster can attend.\"},",
-                "        {\"Is there anything you would like to share with the Clinical Services Department?\", \"Feedback for Clinical Services Department\"}",
-                "    }),",
-                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Renamed Columns\",{\"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"I would like to see additional therapy services added to the program.\", \"ID\"}),",
-                "    #\"Added Custom\" = Table.AddColumn(#\"Removed Columns\", \"Source\", each \"Clinical\"),",
-                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Added Custom\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceText,{\"HIPster's Gender:\", \"Therapy Types Received\", \"Satisfaction with MP Therapy Services\", \"Improvement in Daily Living Skills\", \"Improvement in Social Skills\", \"Improvement in Communication Skills\", \"Increased Independence from Therapy\", \"MP programs meet the needs of my HIPster.\", \"MP staff is flexible and adapt to accommodate my HIPsters's needs.\", \"Effective Communication by Therapy Staff\", \"The cost of the program limits how often my HIPster can attend.\", \"Feedback for Clinical Services Department\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
-                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceText,{\"HIPster's Gender:\", \"Therapy Types Received\", \"Satisfaction with MP Therapy Services\", \"Improvement in Daily Living Skills\", \"Improvement in Social Skills\", \"Improvement in Communication Skills\", \"Increased Independence from Therapy\", \"MP programs meet the needs of my HIPster.\", \"MP staff is flexible and adapt to accommodate my HIPsters's needs.\", \"Effective Communication by Therapy Staff\", \"The cost of the program limits how often my HIPster can attend.\", \"Feedback for Clinical Services Department\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
-                "    #\"Added Custom1\" = Table.AddColumn(#\"Replaced Value1\", \"Type\", each \"Caregiver\")",
-                "in",
-                "    #\"Added Custom1\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "LLL_Hipster",
-        "annotations": [
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          }
-        ],
-        "columns": [
-          {
-            "name": "HIPster's Level of Need",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "68bdf9ea-f304-489d-b7d0-a1c2a11d136a",
-            "sourceColumn": "HIPster's Level of Need",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "HIPster's Name",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "30b959b9-9401-403d-8c9f-064a39840722",
-            "sourceColumn": "HIPster's Name",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "HIPster's Gender",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "19dc9a8f-a2e4-47c6-b997-78720f631fcd",
-            "sourceColumn": "HIPster's Gender",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Program Length",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "667192e1-a2b8-4747-9316-195ce6aebd96",
-            "sourceColumn": "Program Length",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Number of Days a Week HIPster Attends MP",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "6ca939cd-fc76-4146-85d4-08faa161210b",
-            "sourceColumn": "Number of Days a Week HIPster Attends MP",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Likes Being a HIPster at MP",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "939f77ff-2ccf-4e23-aa4f-810f7385d9bd",
-            "sourceColumn": "Likes Being a HIPster at MP",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP Online Preferred Place",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "39505213-a4de-4a48-93e5-c4d3eee10260",
-            "sourceColumn": "MP Online Preferred Place",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Learned Something New",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "5be7d94e-ad97-4744-abd7-f870981ab5b4",
-            "sourceColumn": "Learned Something New",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Instructor Cares",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9db7f04a-a7d3-4226-8222-14587707eb27",
-            "sourceColumn": "Instructor Cares",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Made Friends",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "a06c8948-5b67-4c4c-ac64-b172b7595e1e",
-            "sourceColumn": "Made Friends",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Chooses Own Classes",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "01ef7707-a033-415f-ae6f-6201ef39d68b",
-            "sourceColumn": "Chooses Own Classes",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Shares Knowledge",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c4f9bf9f-aaa8-4a39-a5b5-d3f54eeddf00",
-            "sourceColumn": "Shares Knowledge",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Keeps Trying When Hard",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "dc4c8fe1-2be6-4984-9317-3ce3bbf4497d",
-            "sourceColumn": "Keeps Trying When Hard",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Helps Learn Good Choices",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "f2041881-b77d-4529-aa95-e6537c4da0b5",
-            "sourceColumn": "Helps Learn Good Choices",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Excited About Future",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "563d634d-2826-4ead-92e0-c8bd89ceb20a",
-            "sourceColumn": "Excited About Future",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Best Part of Being a HIPster",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "8f2d94af-7987-4816-89ca-0014f5d4ddf6",
-            "sourceColumn": "Best Part of Being a HIPster",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Source",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "a7cdae21-bcc2-4eba-a3a3-9c04a84a0636",
-            "sourceColumn": "Source",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Type",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "ef083d7b-cded-43bf-a5f9-88b65aa22c8e",
-            "sourceColumn": "Type",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "ac0dc7cb-3305-4a3a-9f6d-ef992d60ce43",
-        "measures": [
-          {
-            "name": "I've Learned Something New",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Learned Something New] = \"Yes\") / COUNTROWS(LLL_Hipster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "0d2cde56-e890-489b-875d-60440c97361b"
-          },
-          {
-            "name": "I Share What I Know",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Shares Knowledge] = \"Yes\") / COUNTROWS(LLL_Hipster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "08f7c016-004d-4967-bb70-d9b1bf389f39"
-          },
-          {
-            "name": "I Learn to Make Good Choices",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Helps Learn Good Choices] <> \"No\") / COUNTROWS(LLL_Hipster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "5ed0a3ae-5505-4f7a-8dbf-fe894aa7a7eb"
-          },
-          {
-            "name": "I Like Being a HIPster",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Likes Being a HIPster at MP] <> \"No\") / COUNTROWS(LLL_Hipster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "90765e55-ba94-4df2-8a86-5197564745b0"
-          },
-          {
-            "name": "My Instructors Care About Me",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Instructor Cares] <> \"No\") / COUNTROWS(LLL_Hipster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "42ddcee2-4158-4d5f-b1f1-7fd87f0a3570"
-          },
-          {
-            "name": "I've Made HIPster Friends",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Made Friends] <> \"No\") / COUNTROWS(LLL_Hipster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "a7b6c194-47ae-4489-b089-1cd7fb33795c"
-          },
-          {
-            "name": "I'm Excited about My Future",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Excited About Future] <> \"No\") / COUNTROWS(LLL_Hipster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "52a1d6c3-e074-4835-8586-304f68b59017"
-          },
-          {
-            "name": "I Pick My Own Classes",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Chooses Own Classes] <> \"No\") / COUNTROWS(LLL_Hipster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "627d8e25-e76b-49e5-8ae8-221bcee7d4dd"
-          },
-          {
-            "name": "I Keep Trying When Things are Hard",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Keeps Trying When Hard] <> \"No\") / COUNTROWS(LLL_Hipster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "aacec70d-a045-4dc0-81f6-61e69d1ca37f"
-          },
-          {
-            "name": "I've Learned to Make Good Choices",
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Hipster), LLL_Hipster[Helps Learn Good Choices] <> \"No\") / COUNTROWS(LLL_Hipster))",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "fcdbabfc-7756-48fc-a335-8fed3501db08"
-          },
-          {
-            "name": "Female",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Caregiver), LLL_Caregiver[HIPster's Gender:] = \"Female\") / COUNTROWS(LLL_Caregiver))",
-            "lineageTag": "146e55ee-17c9-4e93-ae0b-36d5f9b3ac4b"
-          },
-          {
-            "name": "Male",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "(CALCULATE(COUNTROWS(LLL_Caregiver), LLL_Caregiver[HIPster's Gender:] = \"Male\") / COUNTROWS(LLL_Caregiver))",
-            "lineageTag": "c3b9d122-fe53-4504-bfd3-c5bed7057a82"
-          }
-        ],
-        "partitions": [
-          {
-            "name": "LLL_Hipster",
-            "mode": "import",
-            "queryGroup": "LLL",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = Excel.Workbook(Web.Contents(\"https://github.com/seancairns14/UTDMyPossibilities/raw/William/Sources/LifeLongLearning/Lifelong%20Learning%C2%A0HIPster%C2%A0Survey(1-197).xlsx\"), null, true),",
-                "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{",
-                "        {\"ID\", Int64.Type}, ",
-                "        {\"Start time\", type datetime}, ",
-                "        {\"Completion time\", type datetime}, ",
-                "        {\"Email\", type text}, ",
-                "        {\"Name\", type any}, ",
-                "        {\"Last modified time\", type any}, ",
-                "        {\"HIPster's Level of Need (LON)\", type text}, ",
-                "        {\"HIPster's Name\", type text}, ",
-                "        {\"Gender:\", type text}, ",
-                "        {\"Program Length\", type text}, ",
-                "        {\"AM or PM HIPster\", type text}, ",
-                "        {\"How many days per week do you attend MP?\", type text}, ",
-                "        {\"Do you like being a HIPster at MP?\", type text}, ",
-                "        {\"Is MP the place you want to be?\", type text}, ",
-                "        {\"Have you learned something new at MP?\", type text}, ",
-                "        {\"Do your instructors show care for you?\", type text}, ",
-                "        {\"Have you made friends with other HIPsters?\", type text}, ",
-                "        {\"Do you pick your own classes?\", type text}, ",
-                "        {\"Do you share what you know?\", type text}, ",
-                "        {\"Do you keep trying even when things are hard to do?\", type text}, ",
-                "        {\"Do you learn to make good choices at MP?\", type text}, ",
-                "        {\"Are you excited about your future?\", type text}, ",
-                "        {\"What I like most about being a HIPster:\", type text}",
-                "    }),",
-                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Email\", \"Name\", \"Last modified time\"}),",
-                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Columns\"),",
-                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Duplicates\",{",
-                "        {\"HIPster's Level of Need (LON)\", \"HIPster's Level of Need\"},",
-                "        {\"HIPster's Name\", \"HIPster's Name\"},",
-                "        {\"Gender:\", \"HIPster's Gender\"},",
-                "        {\"Program Length\", \"Program Length\"},",
-                "        {\"AM or PM HIPster\", \"AM or PM HIPster\"},",
-                "        {\"How many days per week do you attend MP?\", \"Number of Days a Week HIPster Attends MP\"},",
-                "        {\"Do you like being a HIPster at MP?\", \"Likes Being a HIPster at MP\"},",
-                "        {\"Is MP the place you want to be?\", \"MP Online Preferred Place\"},",
-                "        {\"Have you learned something new at MP?\", \"Learned Something New\"},",
-                "        {\"Do your instructors show care for you?\", \"Instructor Cares\"},",
-                "        {\"Have you made friends with other HIPsters?\", \"Made Friends\"},",
-                "        {\"Do you pick your own classes?\", \"Chooses Own Classes\"},",
-                "        {\"Do you share what you know?\", \"Shares Knowledge\"},",
-                "        {\"Do you keep trying even when things are hard to do?\", \"Keeps Trying When Hard\"},",
-                "        {\"Do you learn to make good choices at MP?\", \"Helps Learn Good Choices\"},",
-                "        {\"Are you excited about your future?\", \"Excited About Future\"},",
-                "        {\"What I like most about being a HIPster:\", \"Best Part of Being a HIPster\"}",
-                "    }),",
-                "    #\"Replaced Values\" = Table.ReplaceValue(#\"Renamed Columns\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"HIPster's Level of Need\", \"HIPster's Name\", \"HIPster's Gender\", \"Program Length\", \"AM or PM HIPster\", \"Number of Days a Week HIPster Attends MP\", \"Likes Being a HIPster at MP\", \"MP Online Preferred Place\", \"Learned Something New\", \"Instructor Cares\", \"Made Friends\", \"Chooses Own Classes\", \"Shares Knowledge\", \"Keeps Trying When Hard\", \"Helps Learn Good Choices\", \"Excited About Future\", \"Best Part of Being a HIPster\"}),",
-                "    #\"Replaced Values1\" = Table.ReplaceValue(#\"Replaced Values\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"HIPster's Level of Need\", \"HIPster's Name\", \"HIPster's Gender\", \"Program Length\", \"AM or PM HIPster\", \"Number of Days a Week HIPster Attends MP\", \"Likes Being a HIPster at MP\", \"MP Online Preferred Place\", \"Learned Something New\", \"Instructor Cares\", \"Made Friends\", \"Chooses Own Classes\", \"Shares Knowledge\", \"Keeps Trying When Hard\", \"Helps Learn Good Choices\", \"Excited About Future\", \"Best Part of Being a HIPster\"}),",
-                "    #\"Replaced Values2\" = Table.ReplaceValue(#\"Replaced Values1\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"HIPster's Level of Need\", \"HIPster's Name\", \"HIPster's Gender\", \"Program Length\", \"AM or PM HIPster\", \"Number of Days a Week HIPster Attends MP\", \"Likes Being a HIPster at MP\", \"MP Online Preferred Place\", \"Learned Something New\", \"Instructor Cares\", \"Made Friends\", \"Chooses Own Classes\", \"Shares Knowledge\", \"Keeps Trying When Hard\", \"Helps Learn Good Choices\", \"Excited About Future\", \"Best Part of Being a HIPster\"}),",
-                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Replaced Values2\",{\"Start time\", \"Completion time\", \"AM or PM HIPster\"}),",
-                "    #\"Replaced Value3\" = Table.ReplaceValue(#\"Removed Columns1\",\"Yes with Jamie she is best coach teacher. I wish all teachers would be like Jamie\",\"Yes\",Replacer.ReplaceText,{\"MP Online Preferred Place\"}),",
-                "    #\"Replaced Value4\" = Table.ReplaceValue(#\"Replaced Value3\",\"Yes to many people in hallways and to load in lunch room. I like quiet lunch. \",\"Yes\",Replacer.ReplaceText,{\"Learned Something New\"}),",
-                "    #\"Replaced Value5\" = Table.ReplaceValue(#\"Replaced Value4\",\"Sometimes my teacher leaves us alone. I don’t like this.\",null,Replacer.ReplaceValue,{\"Instructor Cares\"}),",
-                "    #\"Replaced Value6\" = Table.ReplaceValue(#\"Replaced Value5\",\"None\",null,Replacer.ReplaceValue,{\"HIPster's Gender\"}),",
-                "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Replaced Value6\",{\"ID\"}),",
-                "    #\"Added Custom\" = Table.AddColumn(#\"Removed Columns2\", \"Source\", each \"LifeLong Learning\"),",
-                "    #\"Added Custom1\" = Table.AddColumn(#\"Added Custom\", \"Type\", each \"HIPster\")",
-                "in",
-                "    #\"Added Custom1\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "LLL_Caregiver",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
->>>>>>> Stashed changes
           }
         ],
         "changedProperties": [
@@ -2813,11 +1368,7 @@
         ],
         "columns": [
           {
-<<<<<<< Updated upstream
             "name": "My HIPster's Gender:",
-=======
-            "name": "HIPster's Gender:",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -3433,18 +1984,6 @@
                 "let",
                 "    Source = Excel.Workbook(Web.Contents(\"https://github.com/seancairns14/UTDMyPossibilities/raw/William/Sources/LifeLongLearning/Lifelong%20Learning%C2%A0Caregiver%C2%A0Survey(1-104).xlsx\"), null, true),",
                 "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
-<<<<<<< Updated upstream
-                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", type text}, {\"My HIPster's Gender:\", type text}, {\"My HIPster's Hours of Attendance\", type text}, {\"My HIPsters Daily Schedule\", type text}, {\"The Number of Days a Week My HIPster attends MP\", Int64.Type}, {\"The Number of Years My HIPster has attended MP\", type text}, {\"MP programs meet the needs of my HIPster.\", type text}, {\"My HIPster has opportunities for community engagement, meaningful activities and events.\", type text}, {\"The MP structure and routine work well for my HIPster.\", type text}, {\"MP provides a safe and supportive environment for my HIPster.\", type text}, {\"MP programs promote socialization, skill-building, and personal growth.\", type text}, {\"MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.\", type text}, {\"MP staff is flexible and adapt to accommodate my HIPsters's needs.\", type text}, {\"MP staff addresses the individual needs of my HIPster.\", type text}, {\"MP communicates effectively regarding schedules, events, and activities.\", type text}, {\"MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.\", type text}, {\"Please rate the overall quality of programming received in 2023\", Int64.Type}, {\"How effectively has My Possibilities addressed your concerns and filled a void in your HIPsters life?\", Int64.Type}, {\"How likely are you to recommend My Possibilities?\", Int64.Type}, {\"The cost of the program limits how often my HIPster can attend.\", type text}, {\"Transportation is a challenge for my HIPster to attend MP\", type text}, {\"How can we improve our programming?\", type text}, {\"Are there any class topics you would like to see introduced to our programming?\", type text}, {\"How can we improve our our administrative processes? (billing, communications, events, etc.?)\", type text}, {\"What do you believe your HIPsters life would be like without the support and services provided by My Possibilities?\", type text}, {\"Is there any additional information you would like to share with the leadership team?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}}),",
-                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Name\", \"Last modified time\"}),",
-                "    #\"Sorted Rows\" = Table.Sort(#\"Removed Columns\",{{\"Email\", Order.Ascending}}),",
-                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Sorted Rows\",{\"Email\"}),",
-                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Columns1\"),",
-                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Removed Duplicates\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"My HIPster's Gender:\", \"My HIPster's Hours of Attendance\", \"My HIPsters Daily Schedule\", \"The Number of Days a Week My HIPster attends MP\", \"The Number of Years My HIPster has attended MP\", \"MP programs meet the needs of my HIPster.\", \"My HIPster has opportunities for community engagement, meaningful activities and events.\", \"The MP structure and routine work well for my HIPster.\", \"MP provides a safe and supportive environment for my HIPster.\", \"MP programs promote socialization, skill-building, and personal growth.\", \"MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.\", \"MP staff is flexible and adapt to accommodate my HIPsters's needs.\", \"MP staff addresses the individual needs of my HIPster.\", \"MP communicates effectively regarding schedules, events, and activities.\", \"MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Please rate the overall quality of programming received in 2023\", \"How effectively has My Possibilities addressed your concerns and filled a void in your HIPsters life?\", \"How likely are you to recommend My Possibilities?\", \"The cost of the program limits how often my HIPster can attend.\", \"Transportation is a challenge for my HIPster to attend MP\", \"How can we improve our programming?\", \"Are there any class topics you would like to see introduced to our programming?\", \"How can we improve our our administrative processes? (billing, communications, events, etc.?)\", \"What do you believe your HIPsters life would be like without the support and services provided by My Possibilities?\", \"Is there any additional information you would like to share with the leadership team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
-                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"My HIPster's Gender:\", \"My HIPster's Hours of Attendance\", \"My HIPsters Daily Schedule\", \"The Number of Days a Week My HIPster attends MP\", \"The Number of Years My HIPster has attended MP\", \"MP programs meet the needs of my HIPster.\", \"My HIPster has opportunities for community engagement, meaningful activities and events.\", \"The MP structure and routine work well for my HIPster.\", \"MP provides a safe and supportive environment for my HIPster.\", \"MP programs promote socialization, skill-building, and personal growth.\", \"MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.\", \"MP staff is flexible and adapt to accommodate my HIPsters's needs.\", \"MP staff addresses the individual needs of my HIPster.\", \"MP communicates effectively regarding schedules, events, and activities.\", \"MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Please rate the overall quality of programming received in 2023\", \"How effectively has My Possibilities addressed your concerns and filled a void in your HIPsters life?\", \"How likely are you to recommend My Possibilities?\", \"The cost of the program limits how often my HIPster can attend.\", \"Transportation is a challenge for my HIPster to attend MP\", \"How can we improve our programming?\", \"Are there any class topics you would like to see introduced to our programming?\", \"How can we improve our our administrative processes? (billing, communications, events, etc.?)\", \"What do you believe your HIPsters life would be like without the support and services provided by My Possibilities?\", \"Is there any additional information you would like to share with the leadership team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
-                "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Replaced Value1\",{\"Start time\", \"Completion time\", \"ID\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\"})",
-                "in",
-                "    #\"Removed Columns2\""
-=======
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{",
                 "        {\"ID\", Int64.Type}, ",
                 "        {\"Start time\", type datetime}, ",
@@ -3503,7 +2042,6 @@
                 "    #\"Added Custom1\" = Table.AddColumn(#\"Removed Columns1\", \"Type\", each \"Caregiver\")",
                 "in",
                 "    #\"Added Custom1\""
->>>>>>> Stashed changes
               ],
               "type": "m"
             }
@@ -3516,13 +2054,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-<<<<<<< Updated upstream
-=======
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
->>>>>>> Stashed changes
           }
         ],
         "columns": [
@@ -3534,14 +2065,6 @@
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
->>>>>>> Stashed changes
             "dataType": "string",
             "lineageTag": "c8380228-0ec1-483d-bd9d-38fc23a16e68",
             "sourceColumn": "HIPster's Medicaid Waiver Assigned Level of Need (LON):",
@@ -3555,48 +2078,23 @@
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
->>>>>>> Stashed changes
             "dataType": "string",
             "lineageTag": "72b1760b-dfba-4087-81f5-d7c1d766aa01",
             "sourceColumn": "HIPster's Gender:",
             "summarizeBy": "none"
           },
           {
-<<<<<<< Updated upstream
             "name": "Number of Days a Week HIPster attends MP Online Classes",
-=======
-            "name": "The Number of Days a Week My HIPster attends MP",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "2a61206c-526a-49de-a7cc-54fe50f5f24c",
             "sourceColumn": "Number of Days a Week HIPster attends MP Online Classes",
             "summarizeBy": "none"
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "2a61206c-526a-49de-a7cc-54fe50f5f24c",
-            "sourceColumn": "The Number of Days a Week My HIPster attends MP",
-            "summarizeBy": "sum"
->>>>>>> Stashed changes
           },
           {
             "name": "What year did your HIPster begin MP Online?",
@@ -3606,7 +2104,6 @@
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "3969da0a-2945-4f41-bb46-d11828a9a96e",
             "sourceColumn": "What year did your HIPster begin MP Online?",
@@ -3614,28 +2111,12 @@
           },
           {
             "name": "MP Online meet the needs of my HIPster.",
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "3969da0a-2945-4f41-bb46-d11828a9a96e",
-            "sourceColumn": "What year did your HIPster begin MP Online?",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "MP programs meet the needs of my HIPster.",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "88149e70-4949-4429-8f04-57a1410a9ed4",
             "sourceColumn": "MP Online meet the needs of my HIPster.",
@@ -3643,27 +2124,12 @@
           },
           {
             "name": "MP Online provides a safe and supportive environment for my HIPster.",
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "88149e70-4949-4429-8f04-57a1410a9ed4",
-            "sourceColumn": "MP programs meet the needs of my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP provides a safe and supportive environment for my HIPster.",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "1abb00c7-7b16-4261-8420-69564903567e",
             "sourceColumn": "MP Online provides a safe and supportive environment for my HIPster.",
@@ -3671,27 +2137,12 @@
           },
           {
             "name": "MP Online promote socialization, skill-building, and personal growth.",
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1abb00c7-7b16-4261-8420-69564903567e",
-            "sourceColumn": "MP provides a safe and supportive environment for my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP programs promote socialization, skill-building, and personal growth.",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "bb08f1ef-995d-4b3b-ba9d-914c2a8e30f3",
             "sourceColumn": "MP Online promote socialization, skill-building, and personal growth.",
@@ -3699,27 +2150,12 @@
           },
           {
             "name": "MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.",
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "bb08f1ef-995d-4b3b-ba9d-914c2a8e30f3",
-            "sourceColumn": "MP programs promote socialization, skill-building, and personal growth.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "6337850d-5643-48df-8cae-2f8daded09c1",
             "sourceColumn": "MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.",
@@ -3727,27 +2163,12 @@
           },
           {
             "name": "The MP Online structure and routine work well for my HIPster.",
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "6337850d-5643-48df-8cae-2f8daded09c1",
-            "sourceColumn": "MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "The MP structure and routine work well for my HIPster.",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "55d5a8b7-7e00-442e-988a-478ed2799c99",
             "sourceColumn": "The MP Online structure and routine work well for my HIPster.",
@@ -3755,27 +2176,12 @@
           },
           {
             "name": "The MP Online staff addresses the individual needs of my HIPster.",
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "55d5a8b7-7e00-442e-988a-478ed2799c99",
-            "sourceColumn": "The MP structure and routine work well for my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP staff address the individual needs of my HIPster.",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "c0827b60-d74c-4ff0-bdb9-911546bfc283",
             "sourceColumn": "The MP Online staff addresses the individual needs of my HIPster.",
@@ -3783,27 +2189,12 @@
           },
           {
             "name": "The MP Online program is flexible and accommodates my HIPsters's needs.",
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c0827b60-d74c-4ff0-bdb9-911546bfc283",
-            "sourceColumn": "MP staff address the individual needs of my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP staff is flexible and adapt to accommodate my HIPsters's needs.",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "0b33bd50-3b3c-4974-9841-0b9aa3c78753",
             "sourceColumn": "The MP Online program is flexible and accommodates my HIPsters's needs.",
@@ -3811,27 +2202,12 @@
           },
           {
             "name": "The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.",
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0b33bd50-3b3c-4974-9841-0b9aa3c78753",
-            "sourceColumn": "MP staff is flexible and adapt to accommodate my HIPsters's needs.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "b5ae5d50-524e-4053-a3ba-f4f89cef51e2",
             "sourceColumn": "The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.",
@@ -3839,40 +2215,15 @@
           },
           {
             "name": "Transportation is a challenge for my HIPster to attend MP in person",
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b5ae5d50-524e-4053-a3ba-f4f89cef51e2",
-            "sourceColumn": "MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Transportation is a challenge for my HIPster to attend MP",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
             "dataType": "string",
             "lineageTag": "01ea7b00-2c0b-44f5-90b4-780ba92ca199",
             "sourceColumn": "Transportation is a challenge for my HIPster to attend MP in person",
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "01ea7b00-2c0b-44f5-90b4-780ba92ca199",
-            "sourceColumn": "Transportation is a challenge for my HIPster to attend MP",
->>>>>>> Stashed changes
             "summarizeBy": "none"
           },
           {
@@ -3883,14 +2234,6 @@
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
->>>>>>> Stashed changes
             "dataType": "string",
             "lineageTag": "dc74e322-3fe7-41bf-b5b9-da17560a95ae",
             "sourceColumn": "The cost of the program limits how often my HIPster can attend.",
@@ -3904,33 +2247,17 @@
                 "value": "Automatic"
               }
             ],
-<<<<<<< Updated upstream
-=======
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
->>>>>>> Stashed changes
             "dataType": "string",
             "lineageTag": "8d5da763-fe4c-493e-abe0-66086d79f795",
             "sourceColumn": "Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?",
             "summarizeBy": "none"
           },
           {
-<<<<<<< Updated upstream
             "name": "Is there anything you would like to share with the MP Leadership Team?",
-=======
-            "name": "Is there any additional information you would like to share with the leadership team?",
->>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
               }
-            ],
-<<<<<<< Updated upstream
-            "dataType": "string",
             "lineageTag": "444c2aa6-4e96-4dc3-bcb9-743dbdc8e0bf",
             "sourceColumn": "Is there anything you would like to share with the MP Leadership Team?",
 =======
@@ -4037,39 +2364,12 @@
                 "let",
                 "    Source = Excel.Workbook(Web.Contents(\"https://github.com/seancairns14/UTDMyPossibilities/raw/William/Sources/Online/Online%C2%A0Caregiver%C2%A0Survey(1-12).xlsx\"), null, true),",
                 "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
-<<<<<<< Updated upstream
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", type text}, {\"HIPster's Gender:\", type text}, {\"Number of Days a Week HIPster attends MP Online Classes\", Int64.Type}, {\"What year did your HIPster begin MP Online?\", Int64.Type}, {\"MP Online meet the needs of my HIPster.\", type text}, {\"MP Online provides a safe and supportive environment for my HIPster.\", type text}, {\"MP Online promote socialization, skill-building, and personal growth.\", type text}, {\"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", type text}, {\"The MP Online structure and routine work well for my HIPster.\", type text}, {\"The MP Online staff addresses the individual needs of my HIPster.\", type text}, {\"The MP Online program is flexible and accommodates my HIPsters's needs.\", type text}, {\"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", type text}, {\"Transportation is a challenge for my HIPster to attend MP in person\", type text}, {\"The cost of the program limits how often my HIPster can attend.\", type text}, {\"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", type text}, {\"Is there anything you would like to share with the MP Leadership Team?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}}),",
                 "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"HIPster's Gender:\", \"Number of Days a Week HIPster attends MP Online Classes\", \"What year did your HIPster begin MP Online?\", \"MP Online meet the needs of my HIPster.\", \"MP Online provides a safe and supportive environment for my HIPster.\", \"MP Online promote socialization, skill-building, and personal growth.\", \"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", \"The MP Online structure and routine work well for my HIPster.\", \"The MP Online staff addresses the individual needs of my HIPster.\", \"The MP Online program is flexible and accommodates my HIPsters's needs.\", \"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Transportation is a challenge for my HIPster to attend MP in person\", \"The cost of the program limits how often my HIPster can attend.\", \"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", \"Is there anything you would like to share with the MP Leadership Team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
                 "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", \"HIPster's Gender:\", \"Number of Days a Week HIPster attends MP Online Classes\", \"What year did your HIPster begin MP Online?\", \"MP Online meet the needs of my HIPster.\", \"MP Online provides a safe and supportive environment for my HIPster.\", \"MP Online promote socialization, skill-building, and personal growth.\", \"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", \"The MP Online structure and routine work well for my HIPster.\", \"The MP Online staff addresses the individual needs of my HIPster.\", \"The MP Online program is flexible and accommodates my HIPsters's needs.\", \"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Transportation is a challenge for my HIPster to attend MP in person\", \"The cost of the program limits how often my HIPster can attend.\", \"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", \"Is there anything you would like to share with the MP Leadership Team?\", \"(Optional) HIPster's name:\", \"(Optional) Your name:\", \"(Optional) Your email address:\"}),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Replaced Value1\",{\"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"ID\"})",
                 "in",
                 "    #\"Removed Columns\""
-=======
-                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{",
-                "        {\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Medicaid Waiver Assigned Level of Need (LON):\", type text}, {\"HIPster's Gender:\", type text}, {\"Number of Days a Week HIPster attends MP Online Classes\", Int64.Type}, {\"What year did your HIPster begin MP Online?\", Int64.Type}, {\"MP Online meet the needs of my HIPster.\", type text}, {\"MP Online provides a safe and supportive environment for my HIPster.\", type text}, {\"MP Online promote socialization, skill-building, and personal growth.\", type text}, {\"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", type text}, {\"The MP Online structure and routine work well for my HIPster.\", type text}, {\"The MP Online staff addresses the individual needs of my HIPster.\", type text}, {\"The MP Online program is flexible and accommodates my HIPsters's needs.\", type text}, {\"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", type text}, {\"Transportation is a challenge for my HIPster to attend MP in person\", type text}, {\"The cost of the program limits how often my HIPster can attend.\", type text}, {\"Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?\", type text}, {\"Is there anything you would like to share with the MP Leadership Team?\", type text}, {\"(Optional) HIPster's name:\", type text}, {\"(Optional) Your name:\", type text}, {\"(Optional) Your email address:\", type text}",
-                "    }),",
-                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Strongly Agree\",\"Agree\",Replacer.ReplaceValue,{\"MP Online meet the needs of my HIPster.\", \"MP Online provides a safe and supportive environment for my HIPster.\", \"MP Online promote socialization, skill-building, and personal growth.\", \"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", \"The MP Online structure and routine work well for my HIPster.\", \"The MP Online staff addresses the individual needs of my HIPster.\", \"The MP Online program is flexible and accommodates my HIPsters's needs.\", \"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Transportation is a challenge for my HIPster to attend MP in person\", \"The cost of the program limits how often my HIPster can attend.\"}),",
-                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Strongly Disagree\",\"Disagree\",Replacer.ReplaceValue,{\"MP Online meet the needs of my HIPster.\", \"MP Online provides a safe and supportive environment for my HIPster.\", \"MP Online promote socialization, skill-building, and personal growth.\", \"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", \"The MP Online structure and routine work well for my HIPster.\", \"The MP Online staff addresses the individual needs of my HIPster.\", \"The MP Online program is flexible and accommodates my HIPsters's needs.\", \"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"Transportation is a challenge for my HIPster to attend MP in person\", \"The cost of the program limits how often my HIPster can attend.\"}),",
-                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Replaced Value1\",{\"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"ID\"}),",
-                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns\",{",
-                "        {\"Number of Days a Week HIPster attends MP Online Classes\", \"The Number of Days a Week My HIPster attends MP\"},",
-                "        {\"MP Online meet the needs of my HIPster.\", \"MP programs meet the needs of my HIPster.\"},",
-                "        {\"MP Online provides a safe and supportive environment for my HIPster.\", \"MP provides a safe and supportive environment for my HIPster.\"},",
-                "        {\"MP Online promote socialization, skill-building, and personal growth.\", \"MP programs promote socialization, skill-building, and personal growth.\"},",
-                "        {\"MP Online Instructor is knowledgeable about disabilities and has experience working with individuals with diverse needs.\", \"MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.\"},",
-                "        {\"The MP Online structure and routine work well for my HIPster.\", \"The MP structure and routine work well for my HIPster.\"},",
-                "        {\"The MP Online staff addresses the individual needs of my HIPster.\", \"MP staff address the individual needs of my HIPster.\"},",
-                "        {\"The MP Online program is flexible and accommodates my HIPsters's needs.\", \"MP staff is flexible and adapt to accommodate my HIPsters's needs.\"},",
-                "        {\"The MP Online program provides a culture, philosophy, and approach that align with the values and goals my HIPster.\", \"MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.\"},",
-                "        {\"Transportation is a challenge for my HIPster to attend MP in person\", \"Transportation is a challenge for my HIPster to attend MP\"},",
-                "        {\"The cost of the program limits how often my HIPster can attend.\", \"The cost of the program limits how often my HIPster can attend.\"},",
-                "        {\"Is there anything you would like to share with the MP Leadership Team?\", \"Is there any additional information you would like to share with the leadership team?\"}",
-                "    }),",
-                "    #\"Added Custom\" = Table.AddColumn(#\"Renamed Columns\", \"Source\", each \"Online\"),",
-                "    #\"Added Custom1\" = Table.AddColumn(#\"Added Custom\", \"Type\", each \"Caregiver\")",
-                "in",
-                "    #\"Added Custom1\""
->>>>>>> Stashed changes
               ],
               "type": "m"
             }
@@ -4505,1141 +2805,11 @@
                 "let",
                 "    Source = Excel.Workbook(Web.Contents(\"https://github.com/seancairns14/UTDMyPossibilities/raw/William/Sources/Online/Online%C2%A0HIPster%C2%A0Survey(1-14).xlsx\"), null, true),",
                 "    Table1_Table = Source{[Item=\"Table1\",Kind=\"Table\"]}[Data],",
-<<<<<<< Updated upstream
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{{\"ID\", Int64.Type}, {\"Start time\", type datetime}, {\"Completion time\", type datetime}, {\"Email\", type text}, {\"Name\", type any}, {\"Last modified time\", type any}, {\"HIPster's Name\", type text}, {\"Gender:\", type text}, {\"How do you attend My Possibilities?\", type text}, {\"How many days per week do you attend MP Online?\", Int64.Type}, {\"Do you like being a HIPster at MP?\", type text}, {\"Is MP Online the place you want to be?\", type text}, {\"Have you learned something new at MP Online?\", type text}, {\"Does your instructor care about you?\", type text}, {\"Have you made friends with other HIPsters?\", type text}, {\"Do you pick your own classes?\", type text}, {\"Can you share what you know with your class?\", type text}, {\"Do you keep trying even when things are hard to do?\", type text}, {\"Does MP Online help you learn to make good choices?\", type text}, {\"Are you excited about your future?\", type text}, {\"What do you like best about being a HIPster:\", type text}}),",
                 "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"ID\", \"Start time\", \"Completion time\", \"Email\", \"Name\", \"Last modified time\", \"HIPster's Name\", \"Gender:\", \"How do you attend My Possibilities?\", \"How many days per week do you attend MP Online?\", \"Do you like being a HIPster at MP?\", \"Is MP Online the place you want to be?\", \"Have you learned something new at MP Online?\", \"Does your instructor care about you?\", \"Have you made friends with other HIPsters?\", \"Do you pick your own classes?\", \"Can you share what you know with your class?\", \"Do you keep trying even when things are hard to do?\", \"Does MP Online help you learn to make good choices?\", \"Are you excited about your future?\", \"What do you like best about being a HIPster:\"}),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Replaced Value\",{\"Email\", \"Name\", \"Last modified time\", \"ID\", \"Start time\", \"Completion time\"})",
                 "in",
                 "    #\"Removed Columns\""
-=======
-                "    #\"Changed Type\" = Table.TransformColumnTypes(Table1_Table,{",
-                "        {\"ID\", Int64.Type}, ",
-                "        {\"Start time\", type datetime}, ",
-                "        {\"Completion time\", type datetime}, ",
-                "        {\"Email\", type text}, ",
-                "        {\"Name\", type any}, ",
-                "        {\"Last modified time\", type any}, ",
-                "        {\"HIPster's Name\", type text}, ",
-                "        {\"Gender:\", type text}, ",
-                "        {\"How do you attend My Possibilities?\", type text}, ",
-                "        {\"How many days per week do you attend MP Online?\", Int64.Type}, ",
-                "        {\"Do you like being a HIPster at MP?\", type text}, ",
-                "        {\"Is MP Online the place you want to be?\", type text}, ",
-                "        {\"Have you learned something new at MP Online?\", type text}, ",
-                "        {\"Does your instructor care about you?\", type text}, ",
-                "        {\"Have you made friends with other HIPsters?\", type text}, ",
-                "        {\"Do you pick your own classes?\", type text}, ",
-                "        {\"Can you share what you know with your class?\", type text}, ",
-                "        {\"Do you keep trying even when things are hard to do?\", type text}, ",
-                "        {\"Does MP Online help you learn to make good choices?\", type text}, ",
-                "        {\"Are you excited about your future?\", type text}, ",
-                "        {\"What do you like best about being a HIPster:\", type text}",
-                "    }),",
-                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{",
-                "        {\"HIPster's Name\", \"HIPster's Name\"},",
-                "        {\"Gender:\", \"HIPster's Gender\"},",
-                "        {\"How do you attend My Possibilities?\", \"Attendance Type\"},",
-                "        {\"How many days per week do you attend MP Online?\", \"Number of Days a Week HIPster Attends MP\"},",
-                "        {\"Do you like being a HIPster at MP?\", \"Likes Being a HIPster at MP\"},",
-                "        {\"Is MP Online the place you want to be?\", \"MP Online Preferred Place\"},",
-                "        {\"Have you learned something new at MP Online?\", \"Learned Something New\"},",
-                "        {\"Does your instructor care about you?\", \"Instructor Cares\"},",
-                "        {\"Have you made friends with other HIPsters?\", \"Made Friends\"},",
-                "        {\"Do you pick your own classes?\", \"Chooses Own Classes\"},",
-                "        {\"Can you share what you know with your class?\", \"Shares Knowledge\"},",
-                "        {\"Do you keep trying even when things are hard to do?\", \"Keeps Trying When Hard\"},",
-                "        {\"Does MP Online help you learn to make good choices?\", \"Helps Learn Good Choices\"},",
-                "        {\"Are you excited about your future?\", \"Excited About Future\"},",
-                "        {\"What do you like best about being a HIPster:\", \"Best Part of Being a HIPster\"}",
-                "    }),",
-                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Renamed Columns\",{",
-                "        \"Email\", ",
-                "        \"Name\", ",
-                "        \"Last modified time\", ",
-                "        \"ID\", ",
-                "        \"Start time\", ",
-                "        \"Completion time\"",
-                "    }),",
-                "    #\"Added Custom\" = Table.AddColumn(#\"Removed Columns\", \"Source\", each \"Online\"),",
-                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Added Custom\",\"Sometimes\",\"Yes\",Replacer.ReplaceValue,{\"HIPster's Name\", \"HIPster's Gender\", \"Attendance Type\", \"Number of Days a Week HIPster Attends MP\", \"Likes Being a HIPster at MP\", \"MP Online Preferred Place\", \"Learned Something New\", \"Instructor Cares\", \"Made Friends\", \"Chooses Own Classes\", \"Shares Knowledge\", \"Keeps Trying When Hard\", \"Helps Learn Good Choices\", \"Excited About Future\", \"Best Part of Being a HIPster\"}),",
-                "    #\"Added Custom1\" = Table.AddColumn(#\"Replaced Value\", \"Type\", each \"HIPster\")",
-                "in",
-                "    #\"Added Custom1\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "Caregiver",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "HIPster's Medicaid Waiver Assigned Level of Need (LON):",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "8f675c01-ef7c-46ef-82c2-365c12a04146",
-            "sourceColumn": "HIPster's Medicaid Waiver Assigned Level of Need (LON):",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "HIPster's Gender:",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "be0a6b9b-a03d-4e99-b59b-0b068b4dda60",
-            "sourceColumn": "HIPster's Gender:",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "HIPster's Hours of Attendance",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "f31d7ff5-b9cf-44fc-bc56-2f848ac603e8",
-            "sourceColumn": "HIPster's Hours of Attendance",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "HIPster's Daily Schedule",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "f8541ac4-2268-44e0-8d1f-d5cd8456809c",
-            "sourceColumn": "HIPster's Daily Schedule",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "The Number of Days a Week My HIPster attends MP",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "98149dbc-54f1-4598-b183-26110aa3c490",
-            "sourceColumn": "The Number of Days a Week My HIPster attends MP",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "The Number of Years My HIPster has attended MP",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "92bfc746-3490-4386-b19c-2232b9541532",
-            "sourceColumn": "The Number of Years My HIPster has attended MP",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP programs meet the needs of my HIPster.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "6786048b-78df-49e4-a6b4-92c38917320f",
-            "sourceColumn": "MP programs meet the needs of my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "HIPster has opportunities for community engagement, meaningful activities, and events",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1c41485f-d952-4e36-85b1-e2514c5f6aad",
-            "sourceColumn": "HIPster has opportunities for community engagement, meaningful activities, and events",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "The MP structure and routine work well for my HIPster.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "7490e2f9-9d29-41b7-b3b1-b7395fcd9620",
-            "sourceColumn": "The MP structure and routine work well for my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP provides a safe and supportive environment for my HIPster.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "4be98175-e2a4-4ebb-a55f-ea525a95e581",
-            "sourceColumn": "MP provides a safe and supportive environment for my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP programs promote socialization, skill-building, and personal growth.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "f751a834-9c54-4137-ae51-04ebc52a2d98",
-            "sourceColumn": "MP programs promote socialization, skill-building, and personal growth.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "38bf41ed-2d9a-4a12-b2ec-42976187a93e",
-            "sourceColumn": "MP staff are knowledgeable about disabilities and have experience working with individuals with diverse needs.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Effective communication regarding schedules, events, and activities",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "8bb14184-a6ce-40c5-b547-3688f5f01d85",
-            "sourceColumn": "Effective communication regarding schedules, events, and activities",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "d0e42bbc-1185-47d7-a8f0-f3dd557136fa",
-            "sourceColumn": "MP programs provide a culture, philosophy, and approach that align with the values and goals my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Please rate the overall quality of programming received in 2023",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "67798065-5038-4b8a-a1ee-5c88fd68994a",
-            "sourceColumn": "Please rate the overall quality of programming received in 2023",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "How effectively has My Possibilities addressed your concerns and filled a void in your HIPsters life?",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c21e570a-836a-4f7d-9150-ce7122bb2c09",
-            "sourceColumn": "How effectively has My Possibilities addressed your concerns and filled a void in your HIPsters life?",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "How likely are you to recommend My Possibilities?",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "64a2e99d-ea3d-41b7-ac9a-3c2abec79f73",
-            "sourceColumn": "How likely are you to recommend My Possibilities?",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "The cost of the program limits how often my HIPster can attend.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "50777862-c4bd-469e-bb63-606aeb574c7e",
-            "sourceColumn": "The cost of the program limits how often my HIPster can attend.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Transportation is a challenge for my HIPster to attend MP",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "a1771247-0f2c-4cce-9ee0-45bb1c3c4d88",
-            "sourceColumn": "Transportation is a challenge for my HIPster to attend MP",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "How can we improve our programming?",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "ecda84cf-3fc5-4b81-8a52-07cd32c70bbe",
-            "sourceColumn": "How can we improve our programming?",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Suggested class topics for programming",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "834c1aae-eea7-459e-9748-7171bff4be5f",
-            "sourceColumn": "Suggested class topics for programming",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Suggestions for administrative process improvements",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "14b3bd7c-edec-494b-8421-c8c21b8743f9",
-            "sourceColumn": "Suggestions for administrative process improvements",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "What do you believe your HIPsters life would be like without the support and services provided by My Possibilities?",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "47025e73-a61b-4c05-a156-18dcc4589723",
-            "sourceColumn": "What do you believe your HIPsters life would be like without the support and services provided by My Possibilities?",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Is there any additional information you would like to share with the leadership team?",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "cd8fa04f-f0e2-4e2f-b7f8-29070f711185",
-            "sourceColumn": "Is there any additional information you would like to share with the leadership team?",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "(Optional) HIPster's name:",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "2191ddba-b929-4763-93ac-08f654ec1da6",
-            "sourceColumn": "(Optional) HIPster's name:",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "(Optional) Your name:",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "e6cd0f94-946e-4f49-82ea-b7c6d3a6e17a",
-            "sourceColumn": "(Optional) Your name:",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "(Optional) Your email address:",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "874c5d2f-7c91-4af6-b7d4-e8b81c93b8e7",
-            "sourceColumn": "(Optional) Your email address:",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Type",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "6d23ed41-4481-45b6-9bcc-29113fc81d48",
-            "sourceColumn": "Type",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Therapy Types Received",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "5eeca1d9-8b48-452c-8d54-6943290a5225",
-            "sourceColumn": "Therapy Types Received",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Satisfaction with MP Therapy Services",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "2d55e428-36bd-4ce1-b924-3e076eaef357",
-            "sourceColumn": "Satisfaction with MP Therapy Services",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Improvement in Daily Living Skills",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "8f258f42-c102-4ca3-8f54-2865f6ad8e6e",
-            "sourceColumn": "Improvement in Daily Living Skills",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Improvement in Social Skills",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b6f5ba0d-05cc-429e-9f8b-1181c4988472",
-            "sourceColumn": "Improvement in Social Skills",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Improvement in Communication Skills",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0eaf2328-633d-4c5d-9dfe-096177d217e9",
-            "sourceColumn": "Improvement in Communication Skills",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Increased Independence from Therapy",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9ba7a595-2396-49bd-9f5f-62e1555a52a7",
-            "sourceColumn": "Increased Independence from Therapy",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Effective Communication by Therapy Staff",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "dce9ab46-7757-484f-b642-c91e1b40c00d",
-            "sourceColumn": "Effective Communication by Therapy Staff",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Feedback for Clinical Services Department",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c5691af2-67c9-4d2c-9dd6-8ee72acb02d0",
-            "sourceColumn": "Feedback for Clinical Services Department",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "What year did your HIPster begin MP Online?",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "7f2532e3-ebd3-4648-8524-0575e9d291dc",
-            "sourceColumn": "What year did your HIPster begin MP Online?",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "MP staff is flexible and adapt to accommodate my HIPsters's needs.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9c6e0d24-b13c-4a0f-bbee-d644dbbd9c03",
-            "sourceColumn": "MP staff is flexible and adapt to accommodate my HIPsters's needs.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "43ddbdd7-5fed-4cb2-8d1a-cd6a74098f2b",
-            "sourceColumn": "Would you like to see any additional programming such as a movie night or opportunities for socialization outside normal MP Online hours?",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP staff address the individual needs of my HIPster.",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c65f7707-90c4-484d-90af-92f1d17e8a69",
-            "sourceColumn": "MP staff address the individual needs of my HIPster.",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Source",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "74dbb511-da13-4173-9f59-9b9d4ff1b09d",
-            "sourceColumn": "Source",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "319c9312-533b-4e18-b23f-84eb1d1893be",
-        "partitions": [
-          {
-            "name": "Caregiver",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = Table.Combine({LLL_Caregiver, Clinical_Caregiver, Online_Caregiver})",
-                "in",
-                "    Source"
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "HIPster",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "HIPster's Level of Need",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9b904830-feec-4d8b-8233-73a5432cd0c9",
-            "sourceColumn": "HIPster's Level of Need",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "HIPster's Name",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b8375d67-04eb-4968-a8c6-a66b246b8b3b",
-            "sourceColumn": "HIPster's Name",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "HIPster's Gender",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "70039cdd-6a93-4e77-8ae5-72344e6819ef",
-            "sourceColumn": "HIPster's Gender",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Program Length",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "7d8cbfb1-80c0-414a-8615-a1a5405d42b8",
-            "sourceColumn": "Program Length",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Number of Days a Week HIPster Attends MP",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "47f31ff9-c2c3-471b-ad26-44794c963ced",
-            "sourceColumn": "Number of Days a Week HIPster Attends MP",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Likes Being a HIPster at MP",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "80026022-0946-4d25-aa53-3e16f4b92f44",
-            "sourceColumn": "Likes Being a HIPster at MP",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "MP Online Preferred Place",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "05a90113-e4b1-4664-816a-3746862b7a9e",
-            "sourceColumn": "MP Online Preferred Place",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Learned Something New",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "ab149cbb-c994-455f-b271-365434066988",
-            "sourceColumn": "Learned Something New",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Instructor Cares",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "29825009-d096-477a-a70d-db14747ee12c",
-            "sourceColumn": "Instructor Cares",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Made Friends",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0f9af685-79e3-480b-b5c0-5e198a16b1b2",
-            "sourceColumn": "Made Friends",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Chooses Own Classes",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "38518fa8-8fb0-44e7-9ee8-83fda5d245a2",
-            "sourceColumn": "Chooses Own Classes",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Shares Knowledge",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "25ad18ac-7415-412e-a38e-a9cd3b74007d",
-            "sourceColumn": "Shares Knowledge",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Keeps Trying When Hard",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "3daab41b-50fe-4764-b0f8-cf46afe6c85a",
-            "sourceColumn": "Keeps Trying When Hard",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Helps Learn Good Choices",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "eaca237d-05fa-4ad7-b1de-2a7d0d2d6f57",
-            "sourceColumn": "Helps Learn Good Choices",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Excited About Future",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "89e21ef9-d933-4f8b-b109-166d9615e771",
-            "sourceColumn": "Excited About Future",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Best Part of Being a HIPster",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "a1e9cb34-5740-434a-9ad4-55db353a4b82",
-            "sourceColumn": "Best Part of Being a HIPster",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Type",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "ea0bc642-a13b-462d-ba61-2dd16c320883",
-            "sourceColumn": "Type",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Type of Therapy Received",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "e6edfcc9-ee3b-4ba6-be97-ff7489f8a124",
-            "sourceColumn": "Type of Therapy Received",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Satisfaction with MP Therapy Services",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "3655cdc5-eb5d-4ed3-ba44-5771b2f6b14f",
-            "sourceColumn": "Satisfaction with MP Therapy Services",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Therapy Focus Choice",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9b99963d-f13e-45f2-9bf1-a7b742e0db55",
-            "sourceColumn": "Therapy Focus Choice",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Therapist Helps Learn New Skills",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "2f0625d7-4b3f-4844-a465-8cdb9629155e",
-            "sourceColumn": "Therapist Helps Learn New Skills",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Uses Skills Outside MP",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "faedb019-bc79-4c8c-bc9d-f5bc380fd43e",
-            "sourceColumn": "Uses Skills Outside MP",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Learned to Share Wants and Needs",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "cb75c2e7-4cba-479d-9c97-fc1953583e9e",
-            "sourceColumn": "Learned to Share Wants and Needs",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Improvement in Communication Skills",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "cb94afaa-9f30-48ba-98e0-a29b64ccb50f",
-            "sourceColumn": "Improvement in Communication Skills",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Improvement in Emotional Management",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "3056e2e5-4b46-4664-b90e-8c18db5686bc",
-            "sourceColumn": "Improvement in Emotional Management",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Learned to Ask for Help",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "670b8b0c-47c5-45a1-b52d-b4dfaffa4598",
-            "sourceColumn": "Learned to Ask for Help",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Most Helpful Skill Learned",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "58606df7-19ad-4814-a0f6-bd3c3b1e716b",
-            "sourceColumn": "Most Helpful Skill Learned",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Desired Skills to Learn",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "8ea2cf56-94a7-4bd7-b60a-eaca0bf40fb7",
-            "sourceColumn": "Desired Skills to Learn",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Attendance Type",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9ac5b0aa-77d1-4535-8ef2-b4c56b4c55c6",
-            "sourceColumn": "Attendance Type",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Source",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "e210f4ff-8360-49f6-bbb4-eaaa93ca7784",
-            "sourceColumn": "Source",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "2dbc17b9-8dfe-4aac-b643-a46a39367835",
-        "partitions": [
-          {
-            "name": "HIPster",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = Table.Combine({LLL_Hipster, Clinical_HIPster, Online_HIPster})",
-                "in",
-                "    Source"
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "Sources",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Source",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "911f31e7-7e19-4d58-bfee-bad6b544c890",
-            "sourceColumn": "Source",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "f66aa0fd-a3ca-40bd-a648-4230adbe761b",
-        "partitions": [
-          {
-            "name": "Sources",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = #table({\"Source\"}, {{\"LifeLong Learning\"}, {\"Online\"}, {\"Clinical\"}})",
-                "in",
-                "    Source"
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "Types",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Type",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c57f7d30-df52-4d11-8a19-37ace7927878",
-            "sourceColumn": "Type",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "8660b978-33fb-4351-8269-1dfd92b95398",
-        "partitions": [
-          {
-            "name": "Types",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = #table({\"Type\"}, {{\"HIPster\"}, {\"Caregiver\"}})",
-                "in",
-                "    Source"
->>>>>>> Stashed changes
               ],
               "type": "m"
             }
