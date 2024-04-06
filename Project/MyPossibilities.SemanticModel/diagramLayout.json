@@ -4,156 +4,84 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 451,
         "y": 0
       },
       "nodes": [
         {
           "location": {
-            "x": 303.862105832255,
-            "y": 7.8921145189801791
+            "x": 0,
+            "y": 0
           },
           "nodeIndex": "LLL_Caregiver",
-          "nodeLineageTag": "9ce04416-4d7b-4e23-992c-ba29e0a2faf8",
           "size": {
             "height": 300,
-            "width": 234
-          },
-          "zIndex": 1
-        },
-        {
-          "location": {
-            "x": 547.862105832255,
-            "y": 7.8921145189801791
-          },
-          "nodeIndex": "LLL_Hipster",
-          "nodeLineageTag": "ac0dc7cb-3305-4a3a-9f6d-ef992d60ce43",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 2
-        },
-        {
-          "location": {
-            "x": 790.862105832255,
-            "y": 7.8921145189801791
-          },
-          "nodeIndex": "Clinical_HIPster",
-          "nodeLineageTag": "26e70a20-158d-4099-9229-a13d910c548f",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 3
-        },
-        {
-          "location": {
-            "x": 1036.8621058322551,
-            "y": 7.8921145189801791
-          },
-          "nodeIndex": "Clinical_Caregiver",
-          "nodeLineageTag": "a2a817c7-2c90-4313-a7df-e6ac3fc500a9",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 4
-        },
-        {
-          "location": {
-            "x": 1281.8621058322551,
-            "y": 7.8921145189801791
-          },
-          "nodeIndex": "Online_HIPster",
-          "nodeLineageTag": "5d3e6e78-d638-4ccf-9bc7-54a3922945a5",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 5
-        },
-        {
-          "location": {
-            "x": 1519.8621058322551,
-            "y": 7.8921145189801791
-          },
-          "nodeIndex": "Online_Caregiver",
-          "nodeLineageTag": "afad2b61-44e4-4c38-b8dd-f6517b605f65",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 6
-        },
-        {
-          "location": {
-            "x": 549.370497937662,
-            "y": 606.871782722529
-          },
-          "nodeIndex": "Caregiver",
-          "nodeLineageTag": "319c9312-533b-4e18-b23f-84eb1d1893be",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 7
-        },
-        {
-          "location": {
-            "x": 1267.9451035421184,
-            "y": 603.59728828385551
-          },
-          "nodeIndex": "HIPster",
-          "nodeLineageTag": "2dbc17b9-8dfe-4aac-b643-a46a39367835",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 8
-        },
-        {
-          "location": {
-            "x": 892.82319173363976,
-            "y": 785.64903808187387
-          },
-          "nodeIndex": "Sources",
-          "nodeLineageTag": "f66aa0fd-a3ca-40bd-a648-4230adbe761b",
-          "size": {
-            "height": 124,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 911.86001615852354,
-            "y": 465.25935341606987
+            "x": 284,
+            "y": 0
           },
-          "nodeIndex": "Types",
-          "nodeLineageTag": "8660b978-33fb-4351-8269-1dfd92b95398",
+          "nodeIndex": "LLL_Hipster",
           "size": {
-            "height": 124,
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 0
+          },
+          "nodeIndex": "Clinical_HIPster",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 0
+          },
+          "nodeIndex": "Clinical_Caregiver",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 0
+          },
+          "nodeIndex": "Online_HIPster",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 0
+          },
+          "nodeIndex": "Online_Caregiver",
+          "size": {
+            "height": 300,
             "width": 234
           },
           "zIndex": 0
         }
       ],
       "name": "All tables",
-      "zoomValue": 76.02525261855061,
-      "pinKeyFieldsToTop": false,
-      "showExtraHeaderInfo": false,
-      "hideKeyFieldsWhenCollapsed": false,
-      "tablesLocked": false
-    },
-    {
-      "ordinal": 1,
-      "scrollPosition": {
-        "x": 0,
-        "y": 0
-      },
-      "nodes": [],
-      "name": "Layout 1",
       "zoomValue": 100,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
