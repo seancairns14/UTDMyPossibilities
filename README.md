@@ -29,8 +29,6 @@ https://desktop.github.com/
 - `Types`: A dimension table with three types listed: "LifeLong Learning", "Online", and "Clinical", used for classification or filtering.
 - `Sources`: A dimension table with two types listed: "HIPster" and "Caregiver", that used for classification or filtering.
 
-![image](https://github.com/seancairns14/UTDMyPossibilities/assets/101846471/05032cbe-18ba-4b4c-b33a-d73ebc8c5e84)
-
 
 
 
