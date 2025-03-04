@@ -18,12 +18,11 @@ The project aimed to create a dynamic and scalable dashboard for analyzing surve
   - Aggregated response ratings using a 5-star system.
   - Filtering capabilities to drill down into specific metrics.
 
-## Viewing the Report
-For a detailed breakdown of the methodology and findings, please refer to the full report:
+## Viewing the Dashboard
+For a detailed breakdown of the methodology and findings, please refer to the full Dashboard:
 
 📄 [MyPossibilities.pdf](./MyPossibilities.pdf)
 
-This document provides an in-depth explanation of the dashboard's structure, the survey analysis, and key insights derived from the data.
 
 ## Future Enhancements
 - Implementing additional interactive filters for specific therapy types.
