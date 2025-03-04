@@ -1,35 +1,34 @@
-# UTDMyPossibilities
-PowerBI MyPossibilities
+# MyPossibilities PowerBI Dashboard
 
-# Download Power BI
-There are different versions make sure you install the right one.
-https://www.microsoft.com/store/productId/9NTXR16HNW1T?ocid=pdpshare
+This repository showcases the development process of an interactive PowerBI dashboard designed to visualize survey data from the Lifelong Learning, Online, and Clinical programs at MyPossibilities. The dashboard provides insights into HIPster and Caregiver feedback through a structured data model and interactive visualizations.
 
-# Download Github Desktop
-https://desktop.github.com/
+## Project Overview
+The project aimed to create a dynamic and scalable dashboard for analyzing survey responses. Key steps included:
 
-# Instructions
-1. Clone Repository, and create own branch.
-2. Open in file explorer, open  MyPossibilities.pbix.
-3. Make changes, save file in powerbi, and commit and push to own branch.
+- **Data Integration**: Merging all survey data into a single table with unique identifiers for seamless comparisons.
+- **Data Cleaning & Processing**: Standardizing responses and merging similar questions across programs, particularly between Lifelong Learning and Online surveys.
+- **Relational Data Model**:
+  - `Questions Table`: Contains all unique questions.
+  - `Sources Table`: Lists all programs.
+  - `Types Table`: Categorizes surveys into HIPster or Caregiver.
+  - `Pivoted Data Table`: Enables easy calculation of metrics such as percentage-based responses.
+- **Dashboard Features**:
+  - Total response counts by gender.
+  - Interactive graphs for deeper insights.
+  - Aggregated response ratings using a 5-star system.
+  - Filtering capabilities to drill down into specific metrics.
 
+## Viewing the Report
+For a detailed breakdown of the methodology and findings, please refer to the full report:
 
-# Power BI Data Model Metadata and Relationships
+📄 [MyPossibilities.pdf](./MyPossibilities.pdf)
 
-## Tables and Their Purposes
+This document provides an in-depth explanation of the dashboard's structure, the survey analysis, and key insights derived from the data.
 
-- `LLL_Caregiver`: Contains survey data related to caregivers in a lifelong learning context.
-- `LLL_Hipster`: Stores survey responses from participants (referred to as HIPsters) in lifelong learning programs.
-- `Clinical_HIPster`: Includes clinical survey data provided by HIPsters.
-- `Clinical_Caregiver`: Contains clinical survey responses from caregivers.
-- `Online_HIPster`: Houses data from HIPsters regarding online learning experiences.
-- `Online_Caregiver`: Consists of data from caregivers about online support and services.
-- `Caregiver`: All information about caregivers.
-- `HIPster`: All information on HIPster participants.
-- `Types`: A dimension table with three types listed: "LifeLong Learning", "Online", and "Clinical", used for classification or filtering.
-- `Sources`: A dimension table with two types listed: "HIPster" and "Caregiver", that used for classification or filtering.
+## Future Enhancements
+- Implementing additional interactive filters for specific therapy types.
+- Expanding the dataset to incorporate new survey responses dynamically.
+- Enhancing visual elements for improved user experience.
 
-
-
-
-
+---
+This project was developed to provide MyPossibilities with a scalable and insightful tool for ongoing program evaluation. If you have any questions or suggestions, feel free to reach out!
